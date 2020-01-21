@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Денис Кононученко](https://up.htmlacademy.ru/htmlcss/27/user/1028315).
-* Наставник: Андрей Островский.(https://htmlacademy.ru/profile/grandmaus).
+* Наставник: [Андрей Островский](https://htmlacademy.ru/profile/grandmaus).
 
 ---
 
