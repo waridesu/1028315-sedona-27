@@ -89,18 +89,30 @@
 	    </div>
 	
 	    <div>
-		    <p>Поиск гостиницы в седоне</p>
-		    <!--<form>
-		    <label for="in">ДАТА ЗАЕЗДА</label>
-		    <input type="date" id="in">
-		    <label for="out">ДАТА ВЫЕЗДА</label>
-		    <input type="date" id="out">
-		    <label for="adults">ВЗРОСЛЫЕ</label>
-		    <input type="number" id="adults">
-		    <label for="children">ДЕТИ</label>
-		    <input type="number" id="children">
-		    <input type="submit" value="Найти">
-		    </form>-->
+        	<p>Поиск гостиницы в седоне</p>
+                  <form>
+		<p>
+		  <label for="out">ДАТА ЗАЕЗДА</label>
+		    <input id="in" type="date" value="2017-04-22">
+		</p>
+		<p>
+		  <label for="out">ДАТА ВЫЕЗДА</label>
+		    <input id="out" type="date" value="2017-07-04">
+		</p>
+		<p>
+		  <label for="adults">ВЗРОСЛЫЕ</label>
+		    <button type="button">-</button>
+		      <input id="adults" type="number" min="0" max="99">
+		    <button type="button">+</button>
+
+		    <label for="child">ДЕТИ</label>
+		      <button type="button">-</button>
+		        <input id="child" type="number" min="0" max="99">
+		      <button type="button">+</button>
+				
+		</p>
+			<input type="submit" value="Найти">
+		  </form>
 	    </div>
       
       <div>
