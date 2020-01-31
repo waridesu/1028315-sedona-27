@@ -27,9 +27,9 @@
 	    </nav>
     </header>
     <main>
-      <h1>Перечень мест для проживания</h1>
+      <h1 class="visually-hidden">Перечень мест для проживания</h1>
       <div>
-    	<h2>Фильтр жилья</h2>
+    	<h2 class="visually-hidden">Фильтр жилья</h2>
           <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
           	<fieldset>
             	<legend>Инфраструктура:</legend>
@@ -67,11 +67,11 @@
               </fieldset>
             
               <fieldset>
-              <legend>Стоимость в сутки(₽)</legend>
- 			 <label for="flying">От 0 | до</label>
-                         <output for="flying" name="level">0</output>
- 			 <input name="flevel" id="flying" type="range" min="0" max="5000" value="0"> 	
-	      </fieldset>
+                        <legend>Стоимость в сутки(₽)</legend>
+ 			<label for="flying">От 0 | до</label>
+                        <output for="flying" name="level">0</output>
+ 			<input name="flevel" id="flying" type="range" min="0" max="5000" value="0"> 	
+	            </fieldset>
                      </form>
                     
        
