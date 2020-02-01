@@ -15,7 +15,7 @@
 				    <a href="">Фото и Видео</a>
 			    </li>
 			    <li>
-				    <a href="">Карта штата dgkhhgdgd</a>
+				    <a href="">Карта штата</a>
 			    </li>
 			    <li>
 				    <a href="hotels.html">Гостиницы</a>
@@ -90,28 +90,28 @@
 	
 	    <div>
         	<p>Поиск гостиницы в седоне</p>
-                  <form>
-		<p>
-		  <label for="out">Дата заезда</label>
-		    <input id="in" type="date" value="2017-04-22">
-		</p>
-		<p>
-		  <label for="out">Дата выезда</label>
-		    <input id="out" type="date" value="2017-07-04">
-		</p>
-		<p>
-		  <label for="adults">Взрослые</label>
-		    <button type="button">-</button>
-		      <input id="adults" type="number" min="0" max="99">
-		    <button type="button">+</button>
-
-		    <label for="child">Дети</label>
-		      <button type="button">-</button>
-		        <input id="child" type="number" min="0" max="99">
-		      <button type="button">+</button>
+                <form class="user" method="post" action="http://sedona.html">
+			<p>
+		  <label for="date-in">Дата заезда</label>
+		    <input type="text" id="date-in" name="in" size="30" placeholder="2017-04-22">
+			</p>
+			<p>
+		  <label for="date-out">Дата выезда</label>
+		    <input type="text" id="date-out" size="30" placeholder="2017-07-04">
+			</p>  
+			<p>
+		  <label for="sum-adults">Взрослые</label>
+		    <button type="button" aria-label="Уменьшение кол-ва взрослых">-</button>
+		      <input type="text" id="sum-adults" name="adults" size="1" placeholder="2">
+		    <button type="button" aria-label="Увеличение кол-ва взрослых">+</button>
+			<!--Чтобы управлялось через кнопки и не было стрелок поставил readonly-->
+		    <label for="sum-child">Дети</label>
+		      <button type="button" aria-label="Уменьшение кол-ва детей">-</button>
+		        <input type="text" id="sum-child" name="child" size="1" placeholder="0">
+		      <button type="button" aria-label="Увеличение кол-ва взрослых">+</button>
 				
 		</p>
-			<input type="submit" value="Найти">
+			<button type="submit">Найти</button>
 		  </form>
 	    </div>
       

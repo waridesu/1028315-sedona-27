@@ -30,52 +30,73 @@
       <h1 class="visually-hidden">Перечень мест для проживания</h1>
       <div>
     	<h2 class="visually-hidden">Фильтр жилья</h2>
-          <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+          <form class="user" method="post" action="http://sedona.html">
           	<fieldset>
             	<legend>Инфраструктура:</legend>
-            	<ul>
-                    <li>                		
-                	<input id="pool" type="checkbox">
-                        <label for="pool">Бассейн</label>
-                    </li>
-                    <li>                		
-                 	<input id="parking" type="checkbox">
-                        <label for="parking">Парковка</label>
-                    </li>
-                    <li>                		
-            		<input id="wi-fi" type="checkbox">
-                        <label for="wi-fi">Wi-fi</label>
-                    </li>
-               </ul>
-               </fieldset>
-               <fieldset>
+            		<ul>
+                    	<li>                		
+                		<input type="checkbox" name="pool" id="inf-pool">
+                    		<label for="inf-pool">Бассейн</label>
+                   		</li>
+                    	<li>                		
+                 		<input type="checkbox" name="parking" id="inf-parking">
+                        	<label for="inf-parking">Парковка</label>
+                    	</li>
+                    	<li>                		
+            			<input type="checkbox" name="wi-fi" id="inf-wi-fi">
+                        	<label for="inf-wi-fi">Wi-fi</label>
+                    	</li>
+               		</ul>
+			</fieldset>
+			
+            <fieldset>
                <legend>Тип жилья:</legend>
-               <ul>
-                   <li>                		
-                	<input id="hotel" type="checkbox">
-                        <label for="hotel">Гостиница</label>
-                   </li>
-                   <li>                		
-                 	<input id="motel" type="checkbox">
-                        <label for="motel">Мотель</label>
-                   </li>
-                   <li>                		
-            		<input id="apartments" type="checkbox">
-                        <label for="apartments">Апартаменты</label>
-                   </li>
-              </ul>
-              </fieldset>
+               		<ul>
+                   		<li>                		
+                		<input type="checkbox" name="hotel" id="type-hotel">
+                        	<label for="type-hotel">Гостиница</label>
+                   		</li>
+                   		<li>                		
+                 		<input type="checkbox" name="motel" id="type-motel">
+                        	<label for="type-motel">Мотель</label>
+                   		</li>
+                   		<li>                		
+            			<input type="checkbox" name="apartments" id="type-apartments">
+                        	<label for="type-apartments">Апартаменты</label>
+                   		</li>
+              		</ul>
+            </fieldset>
             
-              <fieldset>
-                        <legend>Стоимость в сутки(₽)</legend>
- 			<label for="flying">От 0 | до</label>
-                        <output for="flying" name="level">0</output>
- 			<input name="flevel" id="flying" type="range" min="0" max="5000" value="0"> 	
-	            </fieldset>
-                     </form>
-                    
-       
-      </div>
+            <fieldset>
+                <legend>Стоимость в сутки(₽)</legend>
+ 							<label for="flying">От 0 | до</label>
+                        	<output for="flying" name="level">0</output>
+						<input name="flevel" id="flying" type="range" min="0" max="5000" value="0">
+				<button type="submit">Показать</button> 	
+			</fieldset>
+			
+			<fieldset>
+				<legend>Cортировка:</legend>
+					<ul>
+						<li>
+							<label for="sort-price">По цене</label>
+						<input type="radio" name="sort" id="sort-price">
+						</li>
+						<li>
+							<label for="sort-type">По типу</label>
+						<input type="radio" name="sort" id="sort-type">
+						</li>
+						<li>
+							<label for="sort-rating">По рейтингу</label>
+						<input type="radio" name="sort" id="sort-rating">
+						</li>
+					</ul>
+				<button type="button" aria-label="Прокрутка вверх"></button>
+				<button type="button" aria-label="Прокрутка вниз"></button>
+			</fieldset>
+		   </form>		                 
+	  </div>
+	  
       <article>
 	      <img src="img/amara.jpg" width="135" height="90" alt="Фото гостиницы Amara resort & spa">
 	      <h2>Amara resort & spa</h2>
