@@ -1,162 +1,165 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<title>Отели</title>
-	</head>
-  <body>
-    <header>
-	    <nav>
-		    <ul>
-			    <li>
-				    <a href="">Информация</a>
-			    </li>
-			    <li>
-				    <a href="">Фото и Видео</a>
-			    </li>
-			    <li>
-				    <a href="">Карта штата</a>
-			    </li>
-			    <li>
-				    <a href="hotels.html">Гостиницы</a>
-			    </li>
-		    </ul>
-		    <a href="index.html">
-         <img src="img/logo-sedona.svg" width="100" height="50" alt="Лого">
-        </a>
-	    </nav>
-    </header>
-    <main>
-    	<h1 class="visually-hidden">Перечень мест для проживания</h1>
-    		<div>
-    			<h2 class="visually-hidden">Фильтр жилья</h2>
-    				<form class="user" method="get" action="https://echo.htmlacademy.ru">
-    					<fieldset>
-            				<legend>Инфраструктура:</legend>
-            					<ul>
-                    				<li>                		
-                						<input type="checkbox" name="pool" id="inf-pool" value="pool" checked>
-                    					<label for="inf-pool">Бассейн</label>
-                   					</li>
-                    				<li>                		
-                 						<input type="checkbox" name="parking" id="inf-parking" value="parking">
-                        				<label for="inf-parking">Парковка</label>
-                    				</li>
-                    				<li>                		
-            							<input type="checkbox" name="wi-fi" id="inf-wi-fi" value="wi-fi">
-                        				<label for="inf-wi-fi">Wi-fi</label>
-                    				</li>
-               					</ul>
-						</fieldset>
-			
-            			<fieldset>
-               				<legend>Тип жилья:</legend>
-               					<ul>
-                   					<li>                		
-                						<input type="checkbox" name="hotel" id="type-hotel" value="hotel" checked>
-                        				<label for="type-hotel">Гостиница</label>
-                   					</li>
-                   					<li>                		
-                 						<input type="checkbox" name="motel" id="type-motel" value="motel" checked>
-                        				<label for="type-motel">Мотель</label>
-                   					</li>
-                   					<li>                		
-            							<input type="checkbox" name="apartments" id="type-apartments" value="apartments" checked>
-                        				<label for="type-apartments">Апартаменты</label>
-                   					</li>
-              					</ul>
-            			</fieldset>
-            
-            			<fieldset>
-                					<legend>Стоимость в сутки(₽)</legend>
- 									<label for="flying">От 0 | до</label>
-                        			<output for="flying" name="level">0</output>
-									<input name="flevel" id="flying" type="range" min="0" max="5000" value="0">
-										
-						</fieldset>
-									<button type="submit">Показать</button> 
-		  			</form>
-			
-							<p>Cортировка:</p>>
-								<ul>
-									<li>
-										<a href="">По цене</a>						
-									</li>
-									<li>
-										<a href="">По типу</a>						
-									</li>
-									<li>
-										<a href="">По рейтингу</a>					
-									</li>
-								</ul>
-										<a href="" aria-label="вверх по списку"></a>
-										<a href="" aria-label="вниз по списку"></a>
-				                 
-	  		</div>
-	  
-      			<article>
-	      			<img src="img/amara.jpg" width="135" height="90" alt="Фото гостиницы Amara resort & spa">
-		  				<h2>
-							<a href="">Amara resort & spa</a>
-	  					</h2>
-	      					<p>
-          						<span>Гостиница</span> От 4000 ₽.
-          					</p>
-	      						<a href="">Подробнее</a>
-	      						<a href="">Забронировать</a>
-	      					<p>Четыре звезды</p>
-	      					<p>Рейтинг:8,5</p>
-      			</article>
 
-      			<article>
-		  			<img src="img/desert.jpg" width="135" height="90" alt="Фото мотеля Desert quail inn">
-		  				<h2>
-							<a href="">Desert quail inn</a>
-						</h2>
-	      					<p>
-          						<span>Мотель</span> От 3000 ₽.
-        					</p>
-	      						<a href="">Подробнее</a>
-	     						<a href="">Забронировать</a>
-	      					<p>Три звезды</p>
-	      					<p>Рейтинг:8,9</p>
-      			</article>
+<head>
+  <meta charset="utf-8">
+  <title>Отели</title>
+</head>
 
-      			<article>
-		  			<img src="img/villas.jpg" width="135" height="90" alt="Фото апартаментов Villas at poco diablo">
-		  				<h2>
-							<a href="">Villas at poco diablo</a>
-						</h2>
-        					<p>
-          						<span>Апартаменты</span> ОТ 2000 ₽.
-        					</p>
-	      						<a href="">Подробнее</a>
-	      						<a href="">Забронировать</a>
-	      					<p> Две звезды</p>
-	      					<p>Рейтинг:9,5</p>
-      			</article>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="">Информация</a>
+        </li>
+        <li>
+          <a href="">Фото и Видео</a>
+        </li>
+        <li>
+          <a href="">Карта штата</a>
+        </li>
+        <li>
+          <a href="hotels.html">Гостиницы</a>
+        </li>
+      </ul>
+      <a href="index.html">
+        <img src="img/logo-sedona.svg" width="100" height="50" alt="Лого">
+      </a>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Перечень мест для проживания</h1>
+    <div>
+      <h2 class="visually-hidden">Фильтр жилья</h2>
+      <form class="user" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="pool" id="inf-pool" value="pool" checked>
+              <label for="inf-pool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="inf-parking" value="parking">
+              <label for="inf-parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wi-fi" id="inf-wi-fi" value="wi-fi">
+              <label for="inf-wi-fi">Wi-fi</label>
+            </li>
+          </ul>
+        </fieldset>
 
-    </main>
-    <footer>
-	    <p>#visitsedona
-		    <a href="tel:74956660266">тел:+7(495)666-02-66</a>
-	    </p>
-	
-	    <ul>
-		    <li>
-			    <a href="" aria-label="Твиттер"></a>
-		    </li>
-		    <li>
-			    <a href="" aria-label="Фейсбук"></a>
-		    </li>
-		    <li>
-			    <a href="" aria-label="Ютуб"></a>
-		    </li>
-	    </ul>
-	
-	    <p>website by 
-		    <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на академию"></a>
-	    </p>
-    </footer>
-  </body>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="hotel" id="type-hotel" value="hotel" checked>
+              <label for="type-hotel">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="type-motel" value="motel" checked>
+              <label for="type-motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartments" id="type-apartments" value="apartments" checked>
+              <label for="type-apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Стоимость в сутки(₽)</legend>
+          <label for="flying">От 0 | до</label>
+          <output for="flying" name="level">0</output>
+          <input name="flevel" id="flying" type="range" min="0" max="5000" value="0">
+
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+
+      <p>Cортировка:</p>>
+      <ul>
+        <li>
+          <a href="">По цене</a>
+        </li>
+        <li>
+          <a href="">По типу</a>
+        </li>
+        <li>
+          <a href="">По рейтингу</a>
+        </li>
+      </ul>
+      <a href="" aria-label="вверх по списку"></a>
+      <a href="" aria-label="вниз по списку"></a>
+
+    </div>
+
+    <article>
+      <img src="img/amara.jpg" width="135" height="90" alt="Фото гостиницы Amara resort & spa">
+      <h2>
+        <a href="">Amara resort & spa</a>
+      </h2>
+      <p>
+        <span>Гостиница</span> От 4000 ₽.
+      </p>
+      <a href="">Подробнее</a>
+      <a href="">Забронировать</a>
+      <p>Четыре звезды</p>
+      <p>Рейтинг:8,5</p>
+    </article>
+
+    <article>
+      <img src="img/desert.jpg" width="135" height="90" alt="Фото мотеля Desert quail inn">
+      <h2>
+        <a href="">Desert quail inn</a>
+      </h2>
+      <p>
+        <span>Мотель</span> От 3000 ₽.
+      </p>
+      <a href="">Подробнее</a>
+      <a href="">Забронировать</a>
+      <p>Три звезды</p>
+      <p>Рейтинг:8,9</p>
+    </article>
+
+    <article>
+      <img src="img/villas.jpg" width="135" height="90" alt="Фото апартаментов Villas at poco diablo">
+      <h2>
+        <a href="">Villas at poco diablo</a>
+      </h2>
+      <p>
+        <span>Апартаменты</span> ОТ 2000 ₽.
+      </p>
+      <a href="">Подробнее</a>
+      <a href="">Забронировать</a>
+      <p> Две звезды</p>
+      <p>Рейтинг:9,5</p>
+    </article>
+
+  </main>
+  <footer>
+    <p>#visitsedona
+      <a href="tel:74956660266">тел:+7(495)666-02-66</a>
+    </p>
+
+    <ul>
+      <li>
+        <a href="" aria-label="Твиттер"></a>
+      </li>
+      <li>
+        <a href="" aria-label="Фейсбук"></a>
+      </li>
+      <li>
+        <a href="" aria-label="Ютуб"></a>
+      </li>
+    </ul>
+
+    <p>website by
+      <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на академию"></a>
+    </p>
+  </footer>
+</body>
+
 </html>
