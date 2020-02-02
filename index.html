@@ -44,20 +44,20 @@
               <p>-№1-</p>
               <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
               <img src="img/real-city.jpg" width="800" height="400" alt="Фото города Седона">
-              <ul>
-                <li>
-                  <h3>Жильё</h3>
-                  <p>Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
-                </li>
-                <li>
-                  <h3>Еда</h3>
-                  <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-                <li>
-                  <h3>Сувениры</h3>
-                  <p>Не только китайского, но и местного производства!</p>
-                </li>
-              </ul>
+          <ul>
+            <li>
+              <h3>Жильё</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
+            </li>
+            <li>
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li>
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
             </li>
             <li>
               <h3>Там есть<br> мост дьявола</h3>
@@ -89,25 +89,27 @@
 	    </div>
 	
 	    <div>
-        	<p>Поиск гостиницы в седоне</p>
-                <form class="user" method="post" action="http://sedona.html">
+        	<button type="button">Поиск гостиницы в седоне</button>
+                <form class="user" method="get" action="https://echo.htmlacademy.ru">
 			<p>
 		  <label for="date-in">Дата заезда</label>
-		    <input type="text" id="date-in" name="in" size="30" placeholder="2017-04-22">
+		    <input type="text" id="date-in" name="in" placeholder="2017-04-22">
+			<button type="button" aria-label="Календарь для события"></button>
 			</p>
 			<p>
 		  <label for="date-out">Дата выезда</label>
-		    <input type="text" id="date-out" size="30" placeholder="2017-07-04">
+		    <input type="text" id="date-out" placeholder="2017-07-04">
+			<button type="button" aria-label="Календарь для события"></button>
 			</p>  
 			<p>
 		  <label for="sum-adults">Взрослые</label>
 		    <button type="button" aria-label="Уменьшение кол-ва взрослых">-</button>
-		      <input type="text" id="sum-adults" name="adults" size="1" placeholder="2">
+		      <input type="text" id="sum-adults" name="adults" placeholder="2">
 		    <button type="button" aria-label="Увеличение кол-ва взрослых">+</button>
-			<!--Чтобы управлялось через кнопки и не было стрелок поставил readonly-->
+		
 		    <label for="sum-child">Дети</label>
 		      <button type="button" aria-label="Уменьшение кол-ва детей">-</button>
-		        <input type="text" id="sum-child" name="child" size="1" placeholder="0">
+		        <input type="text" id="sum-child" name="child" placeholder="0">
 		      <button type="button" aria-label="Увеличение кол-ва взрослых">+</button>
 				
 		</p>
@@ -138,7 +140,7 @@
 	    </ul>
 	
 	    <p>website by
-		    <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Логотип Академии"></a> 
+		    <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на академию"></a> 
 	    </p>
     </footer>
  </body>
