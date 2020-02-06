@@ -4,37 +4,40 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="inner-page">
   <header>
     <nav>
       <ul>
-        <li>
+        <li class="nav-left">
           <a href="">Информация</a>
         </li>
-        <li>
+        <li class="nav-left">
           <a href="">Фото и Видео</a>
         </li>
-        <li>
+        <li class="nav-right">
           <a href="">Карта штата</a>
         </li>
-        <li>
+        <li class="nav-right">
           <a href="hotels.html">Гостиницы</a>
         </li>
       </ul>
       <a href="index.html">
-        <img src="img/logo-sedona.svg" width="100" height="50" alt="Лого">
+        <img class="logo" src="img/logo-sedona.svg" width="100" height="50" alt="Лого">
       </a>
     </nav>
   </header>
   <main>
-    <div>
+    <div class="intro">
       <img src="img/intro-welcome.svg" width="459" height="353" alt="Приветствие">
     </div>
 
-    <div>
-      <h1>Седона — небольшой городок в Аризоне,заслуживающий большего!</h1>
+    <div class="heading">
+      <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
 
@@ -42,42 +45,46 @@
       <h2 class="visually-hidden">Преимущесва</h2>
       <ul>
         <li>
-          <h3>Настоящий городок</h3>
-          <p>-№1-</p>
-          <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-          <img src="img/real-city.jpg" width="800" height="400" alt="Фото города Седона">
+          <div class="float-left">
+            <h3>Настоящий городок</h3>
+            <p>-№1-</p>
+            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <img class="img-right" src="img/real-city.jpg" width="800" height="400" alt="Фото города Седона">
           <ul>
-            <li>
+            <li class="nested-list">
               <h3>Жильё</h3>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
             </li>
-            <li>
+            <li class="nested-list">
               <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li>
+            <li class="nested-list">
               <h3>Сувениры</h3>
               <p>Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </li>
         <li>
-          <h3>Там есть<br> мост дьявола</h3>
-          <p>-№2-</p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          <img src="img/devil's-canyon.jpg" width="800" height="400" alt="Фото дьявольского моста">
+          <div class="float-right">
+            <h3>Там есть<br> мост дьявола</h3>
+            <p>-№2-</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+          <img class="img-left" src="img/devil-canyon.jpg" width="800" height="400" alt="Фото дьявольского моста">
         </li>
-        <li>
+        <li class="trio">
           <h3>Небольшая площадь</h3>
           <p>-№3-</p>
           <p>Все достопримечательности находятся очень близко</p>
         </li>
-        <li>
+        <li class="trio">
           <h3>Красивая дорога</h3>
           <p>-№4-</p>
           <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
         </li>
-        <li>
+        <li class="trio">
           <h3>Мало туристов</h3>
           <p>-№5-</p>
           <p>Большинство едет в гранд каньон и толпится там</p>
@@ -87,12 +94,12 @@
 
     <div>
       <p>Заинтересовались?</p>
-      <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <p class="regular">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
     </div>
 
     <div>
       <button type="button">Поиск гостиницы в Седоне</button>
-      <form class="user" method="get" action="https://echo.htmlacademy.ru">
+      <form class="user visually-hidden" method="get" action="https://echo.htmlacademy.ru">
         <p>
           <label for="date-in">Дата заезда</label>
           <input type="text" id="date-in" name="in" placeholder="2017-04-22">
@@ -120,29 +127,29 @@
     </div>
 
     <div>
-      <img src="img/map.jpg" width="1400" height="750" alt="Карта">
+      <img class="map" src="img/map.jpg" width="1400" height="750" alt="Карта">
       <!-- меньше весит картинка и там не так много цветов-->
     </div>
 
   </main>
   <footer>
-    <p>#visitsedona
+    <p class="telefone">#visitsedona
       <a href="tel:74956660266">тел:+7(495)666-02-66</a>
     </p>
 
-    <ul>
+    <ul class="social-link">
       <li>
-        <a href="" aria-label="Твиттер"></a>
+        <a href="" class="twiter" aria-label="Твиттер"></a>
       </li>
       <li>
-        <a href="" aria-label="Фейсбук"></a>
+        <a href="" class="facebook" aria-label="Фейсбук"></a>
       </li>
       <li>
-        <a href="" aria-label="Ютуб"></a>
+        <a href="" class="youtube" aria-label="Ютуб"></a>
       </li>
     </ul>
 
-    <p>website by
+    <p class="on-academy">website by
       <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на академию"></a>
     </p>
   </footer>
