@@ -1,22 +1,20 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans",Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  color: black;
+  color: #000000;
   text-transform: uppercase;
-  background-color: white;
+  background-color: #ffffff;
   text-align: center;
 }
 
-nav {
-  background-color: white;
-}
+
 
 a {
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -24,18 +22,17 @@ ul {
   list-style: none;
 }
 
-main {
+.intro {
   background-image: url("../img/background-main.jpg");
-  background-position:top center;
   background-repeat: no-repeat;
-  background-size: 1200px 377px;
+  background-size: 100%;
+  background-attachment: fixed;
+  padding-bottom: 20px;
 }
 
-.intro {
-  background-image:url("../img/intro-mask.svg");
-  background-position: bottom ;
-  background-repeat:no-repeat ;
-  padding-bottom: 20px;
+.into::after {/*Добавил почему не работает не знаю*/
+  content: "";
+  background-image: url("../img/intro-mask.svg");
 }
 
 .heading {
@@ -60,22 +57,22 @@ h3 {
   font-size: 21px;
 }
 
-.float-left {
+.first-reason {
   background-color: #81b3d2;
-  color:white;
+  color: #ffffff;
   height: 200px;
   width: 270px;
   padding: 40px;
 
 }
 
-.img-right {
+.img-first-reason {
   width: 770px;
   height: 280px;
   margin-right: 40px;
 }
-.nested-list-1 {
-  background-image: url("../img/icon-1.svg");
+
+.nested-list {
   background-repeat: no-repeat;
   background-position: top center;
   width: 290px;
@@ -83,60 +80,35 @@ h3 {
   margin-top: 60px;
 }
 
-.nested-list-2 {
-  background-image: url("../img/icon-2.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  margin-right: 80px;
-  width: 290px;
-  padding-top: 80px;
-  margin-top: 60px;
-}
-
-.nested-list-3 {
-  background-image: url("../img/icon-3.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  width: 290px;
-  padding-top: 80px;
-  margin-top: 60px;
-}
-
-.float-right{
+.second-reason{
   background-color: #81b3d2;
-  color:white;
+  color: #ffffff;
   height: 200px;
   width: 270px;
   padding: 40px;
   margin-right: 40px;
 }
-.img-left{
+
+.img-second-reason{
   width: 770px;
   height: 280px;
 }
 
-.trio-2 {
-  width: 260px;
+.other-reasons {
+  width: 255px;
   margin-top: 40px;
-  margin-right: 80px;
 }
-.trio-3 {
-  width: 255px;
-  margin-right: 0;
-}
-.trio-1 {
-  width: 255px;
-  margin-left: 0px;
-}
+
 section p {
   font-weight: 400;
 }
+
 .regular {
   font-weight: 400;
 }
-button {
+.search {
   background-color: #766357;
-  color: white;
+  color: #ffffff;
   padding: 20px 60px;
   font-weight: 700;
   font-size: 21px;
@@ -145,31 +117,32 @@ button {
 .user {
   display: none;
 }
+
 .map {
   width: 1200px;
   height: 500px;
 }
 
-.telefone {
+.telephone {
   width: 150px;
   text-align: left;
 }
 
 
-.social-link-1 {
+.twitter {
   background-image: url("../img/twitter.svg") ;
 }
 
-.social-link-2 {/*почему неотображаются не знаю*/
+.facebook {/*почему неотображаются не знаю*/
   background-image: url("../img/fb-icon.svg");
-  background-color: #81b3d2;
+
 }
 
-.social-lin-3 {
+.youtube {
   background-image: url("../img/youtube.svg");
 }
 
-.on-academy {/*почему сьехало не знаю*/
+.academy-link {/*почему сьехало не знаю*/
   font-weight: 400;
   text-align: right;
   background-image: url("../img/logo-htmlacademy.svg");
@@ -177,19 +150,19 @@ button {
   background-repeat: no-repeat;
 }
 
-.tipe-cost {
+.type-cost {
   font-weight: 400;
 }
 .detail {
   background-color: #81b3d2;
-  color:white;
-  padding:5px 15px;
+  color: #ffffff;
+  padding: 5px 15px;
 }
 
 .order {
   background-color: #766357;
-  color:white;
-  padding:5px 15px;
+  color: #ffffff;
+  padding: 5px 15px;
 }
 
 .raiting {
