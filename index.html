@@ -11,25 +11,25 @@
 
 <body class="inner-page">
   <header>
-    <nav class="navigation">
-      <ul class="no-selection">
-        <li class="nav-left">
-          <a class="link" href="">Информация</a>
+    <nav class="navigetion">
+      <ul class="no-selection nav">
+        <li>
+          <a class="link block" href="">Информация</a>
         </li>
-        <li class="nav-left">
-          <a class="link" href="">Фото и Видео</a>
+        <li>
+          <a class="link block" href="">Фото и Видео</a>
         </li>
-        <li class="nav-right">
-          <a class="link" href="">Карта штата</a>
+        <li>
+          <a class="link block chain" href="">Карта штата</a>
         </li>
-        <li class="nav-right">
-          <a class="link" href="hotels.html">Гостиницы</a>
+        <li>
+          <a class="link block chain" href="hotels.html">Гостиницы</a>
         </li>
       </ul>
-      <a href="index.html">
+      <a class="block" href="index.html">
         <img class="logo" src="img/logo-sedona.svg" width="100" height="50" alt="Лого">
       </a>
-    </nav class="navigation">
+    </nav>
   </header>
   <main>
     <div class="intro">
@@ -41,17 +41,19 @@
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
 
-    <section>
+    <section class="content">
       <h2 class="visually-hidden">Преимущесва</h2>
       <ul class="no-selection">
         <li>
-          <div class="first-reason">
-            <h3 class="reason-title">Настоящий городок</h3>
-            <p class="regular">-№1-</p>
-            <p class="regular">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          <div class="flex">
+            <div class="marked">
+              <h3 class="reason-title">Настоящий городок</h3>
+              <p class="regular">-№1-</p>
+              <p class="regular">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <img class="img-reason" src="img/real-city.jpg" width="800" height="400" alt="Фото города Седона">
           </div>
-          <img class="img-first-reason" src="img/real-city.jpg" width="800" height="400" alt="Фото города Седона">
-          <ul class="no-selection">
+          <ul class="no-selection flex">
             <li class="nested-list">
               <h3 class="reason-title">Жильё</h3>
               <p class="regular">Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
@@ -67,34 +69,40 @@
           </ul>
         </li>
         <li>
-          <div class="second-reason">
-            <h3 class="reason-title">Там есть<br> мост дьявола</h3>
-            <p class="regular">-№2-</p>
-            <p class="regular">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <div class="flex">
+            <div class="marked">
+              <h3 class="reason-title">Там есть<br> мост дьявола</h3>
+              <p class="regular">-№2-</p>
+              <p class="regular">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <img class="img-reason second" src="img/devil-canyon.jpg" width="800" height="400"
+              alt="Фото дьявольского моста">
           </div>
-          <img class="img-second-reason" src="img/devil-canyon.jpg" width="800" height="400" alt="Фото дьявольского моста">
         </li>
-        <li class="other-reasons">
-          <h3 class="reason-title">Небольшая площадь</h3>
-          <p class="regular">-№3-</p>
-          <p class="regular">Все достопримечательности находятся очень близко</p>
-        </li>
-        <li class="other-reasons">
-          <h3 class="reason-title">Красивая дорога</h3>
-          <p class="regular">-№4-</p>
-          <p class="regular">Ехать в седону из лас-вегаса совсем не скучно!</p>
-        </li>
-        <li class="other-reasons">
-          <h3 class="reason-title">Мало туристов</h3>
-          <p class="regular">-№5-</p>
-          <p class="regular">Большинство едет в гранд каньон и толпится там</p>
-        </li>
+        <div class="flex">
+          <li class="other-reasons">
+            <h3 class="reason-title">Небольшая площадь</h3>
+            <p class="regular">-№3-</p>
+            <p class="regular">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="other-reasons">
+            <h3 class="reason-title">Красивая дорога</h3>
+            <p class="regular">-№4-</p>
+            <p class="regular">Ехать в седону из лас-вегаса совсем не скучно!</p>
+          </li>
+          <li class="other-reasons">
+            <h3 class="reason-title">Мало туристов</h3>
+            <p class="regular">-№5-</p>
+            <p class="regular">Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </div>
       </ul>
     </section>
 
     <div>
       <p>Заинтересовались?</p>
-      <p class="regular">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <p class="regular">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне
+      </p>
     </div>
 
     <div>
@@ -133,25 +141,27 @@
 
   </main>
   <footer>
-    <p class="telephone">#visitsedona
-      <a class="link" href="tel:74956660266">тел:+7(495)666-02-66</a>
-    </p>
+    <div class="flex">
+      <p class="telephone block">#visitsedona
+        <a class="link" href="tel:74956660266">тел:+7(495)666-02-66</a>
+      </p>
 
-    <ul class="no-selection">
-      <li>
-        <a class="link twitter" href="" aria-label="Твиттер"></a>
-      </li>
-      <li>
-        <a class="link facebook" href="" aria-label="Фейсбук"></a>
-      </li>
-      <li>
-        <a class="link youtube" href="" aria-label="Ютуб"></a>
-      </li>
-    </ul>
+      <ul class="no-selection block">
+        <li>
+          <a class="link twitter" href="" aria-label="Твиттер"></a>
+        </li>
+        <li>
+          <a class="link facebook" href="" aria-label="Фейсбук"></a>
+        </li>
+        <li>
+          <a class="link youtube" href="" aria-label="Ютуб"></a>
+        </li>
+      </ul>
 
-    <p class="academy-link">website by
-      <a class="link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на академию"></a>
-    </p>
+      <p class="academy-link block">website by
+        <a class="link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на академию"></a>
+      </p>
+    </div>
   </footer>
 </body>
 

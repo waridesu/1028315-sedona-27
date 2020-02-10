@@ -11,29 +11,36 @@ body {
   text-align: center;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.block{
+  display: block;
+}
+
 .link {
   color: #000000;
   text-decoration: none;
 }
+
 
 .no-selection {
   list-style: none;
 }
 
 .intro {
-  background-image: url("../img/background-main.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
-  padding-bottom: 20px;
-}
-
-.into::after {/*Добавил почему не работает не знаю*/
-  content: "";
-  background-image: url("../img/intro-mask.svg");
+  background-image: url("../img/intro-mask.svg"), url("../img/background-main.jpg");
+  background-repeat: repeat-x, no-repeat;
+  background-size: 1200px, 1200px;
+  background-position: bottom, center;
+  padding-bottom: 20px ;
 }
 
 .heading {
+  display: inline-block;
   font-size: 14px;
   max-width: 500px;
   font-weight: 400;
@@ -55,19 +62,22 @@ body {
   font-size: 21px;
 }
 
-.first-reason {
+.marked {
+  flex-shrink: 0;
   background-color: #81b3d2;
   color: #ffffff;
   height: 200px;
-  width: 270px;
+  width: 320px;
   padding: 40px;
-
 }
 
-.img-first-reason {
-  width: 770px;
+.img-reason {
+  width: 800px;
   height: 280px;
-  margin-right: 40px;
+}
+
+.second {
+  order: -1;
 }
 
 .nested-list {
@@ -75,16 +85,12 @@ body {
   background-position: top center;
   width: 290px;
   padding-top: 80px;
-  margin-top: 60px;
+  margin: 40px;
 }
 
-.second-reason {
-  background-color: #81b3d2;
-  color: #ffffff;
-  height: 200px;
-  width: 270px;
-  padding: 40px;
-  margin-right: 40px;
+.flex {
+  display: flex;
+  justify-content: center;
 }
 
 .img-second-reason {
@@ -93,8 +99,9 @@ body {
 }
 
 .other-reasons {
+
   width: 255px;
-  margin-top: 40px;
+  margin: 40px;
 }
 
 .regular {
@@ -109,7 +116,7 @@ body {
   font-size: 21px;
 }
 
-.user {
+.none {
   display: none;
 }
 
@@ -119,13 +126,14 @@ body {
 }
 
 .telephone {
-  width: 150px;
   text-align: left;
+  width: 150px;
 }
 
 
 .twitter {
   background-image: url("../img/twitter.svg") ;
+
 }
 
 .facebook {/*почему неотображаются не знаю*/
@@ -138,8 +146,8 @@ body {
 }
 
 .academy-link {/*почему сьехало не знаю*/
+  text-align: left;
   font-weight: 400;
-  text-align: right;
   background-image: url("../img/logo-htmlacademy.svg");
   background-position: right center;
   background-repeat: no-repeat;
@@ -155,4 +163,27 @@ body {
   background-color: #766357;
   color: #ffffff;
   padding: 5px 15px;
+}
+
+.no-border{
+  border: 0 none;
+}
+.filter-width {
+  width:1200px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url("../img/background-main.jpg");
+  background-size: 1200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  text-align: left;
+}
+
+.rest {
+  width: 1200px;
 }
