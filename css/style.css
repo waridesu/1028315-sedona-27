@@ -10,14 +10,34 @@ body {
   background-color: #ffffff;
   text-align: center;
 }
-
-.nav {
-  display: flex;
-  justify-content: space-around;
-
+.inner-page {
+  width: 1200px;
 }
 
-.block{
+.main-navigation {
+  position: relative;
+  width: 1200px;
+}
+
+.site-navigation{
+  display: flex;
+  justify-content: space-evenly;/*Так как по бокам на макете тоже есть место*/
+  padding: 0;
+}
+
+.right{
+  text-align: right;
+}
+
+.nav-list{
+  width: 300px;
+}
+
+.main-header-logo{
+  position: absolute;
+  top:0px;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
 }
 
@@ -27,19 +47,27 @@ body {
 }
 
 
-.no-selection {
+.without-bullets {
   list-style: none;
 }
 
 .intro {
-  background-image: url("../img/intro-mask.svg"), url("../img/background-main.jpg");
-  background-repeat: repeat-x, no-repeat;
-  background-size: 1200px, 1200px;
-  background-position: bottom, center;
-  padding-bottom: 20px ;
+  background-image: url("../img/background-main.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center 25%;
+  padding-top: 60px;
 }
 
-.heading {
+.intro::after {/*Полоса сохранилась*/
+  display: block;
+  content: "";
+  background-image: url("../img/intro-mask.svg");
+  background-position: bottom;
+  height: 60px;
+}
+
+.heading{
   display: inline-block;
   font-size: 14px;
   max-width: 500px;
@@ -57,13 +85,20 @@ body {
   height: 1px;
   margin: -1px;
 }
+.content{
+  width: 100%;/*Отступ не пойму из-за чего*/
+}
+.reason{
+  display: flex;
+  justify-content: space-evenly;
 
+
+}
 .reason-title {
   font-size: 21px;
 }
 
 .marked {
-  flex-shrink: 0;
   background-color: #81b3d2;
   color: #ffffff;
   height: 200px;
@@ -76,30 +111,37 @@ body {
   height: 280px;
 }
 
-.second {
-  order: -1;
-}
-
 .nested-list {
+  width: 290px;
+}
+.home::before {
+  content: "";
+  display: block;
+  background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  width: 290px;
-  padding-top: 80px;
-  margin: 40px;
+  height: 90px;
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
+.food::before {
+  content: "";
+  display: block;
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 90px;
 }
 
-.img-second-reason {
-  width: 770px;
-  height: 280px;
+.suvenir::before {
+  content: "";
+  display: block;
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 90px;
 }
 
 .other-reasons {
-
   width: 255px;
   margin: 40px;
 }
@@ -116,37 +158,42 @@ body {
   font-size: 21px;
 }
 
-.none {
-  display: none;
-}
-
 .map {
   width: 1200px;
   height: 500px;
 }
 
 .telephone {
-  text-align: left;
   width: 150px;
 }
 
+.social-link{
+  display: block;
 
+}
 .twitter {
   background-image: url("../img/twitter.svg") ;
-
+  width: 35px;
+  height: 35px;
+  background-color: #81b3d2;
 }
 
 .facebook {/*почему неотображаются не знаю*/
   background-image: url("../img/fb-icon.svg");
+  width: 35px;
+  height: 35px;
+  background-color: #81b3d2;
 
 }
 
 .youtube {
   background-image: url("../img/youtube.svg");
+  width: 35px;
+  height: 35px;
+  background-color: #81b3d2;
 }
 
 .academy-link {/*почему сьехало не знаю*/
-  text-align: left;
   font-weight: 400;
   background-image: url("../img/logo-htmlacademy.svg");
   background-position: right center;
@@ -165,25 +212,37 @@ body {
   padding: 5px 15px;
 }
 
-.no-border{
-  border: 0 none;
-}
 .filter-width {
   width:1200px;
 }
 
 .filter {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   background-image: url("../img/background-main.jpg");
   background-size: 1200px;
   background-repeat: no-repeat;
   background-position: center;
   color: #ffffff;
-  text-align: left;
+}
+.resting-kind{
+  width: 1200px;
 }
 
 .rest {
   width: 1200px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.art-section {
+display:flex;
+
+
+}
+.images{
+  margin: 25px;
+}
+.raiting {
+  justify-items: flex-end;
 }
