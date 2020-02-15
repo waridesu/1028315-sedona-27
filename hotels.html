@@ -12,8 +12,8 @@
 <body>
   <div class="page-conteiner">
     <header class="main-header">
-      <nav class="main-navigation conteiner">
-        <a class="block" href="index.html">
+      <nav class="main-navigation-conteiner">
+        <a href="index.html">
           <img class="main-header-logo" src="img/logo-sedona.svg" width="100" height="50" alt="Лого">
         </a>
         <ul class="without-bullets site-navigation">
@@ -41,17 +41,17 @@
             <fieldset class="filter-input">
               <legend>Инфраструктура:</legend>
               <ul class="without-bullets">
-                <li>
-                  <input type="checkbox" name="pool" id="inf-pool" value="pool" checked>
-                  <label for="inf-pool">Бассейн</label>
+                <li><span class="check-box"></span>
+                  <input class="check-input" type="checkbox" name="pool" id="inf-pool" value="pool" checked>
+                  <label class="check" for="inf-pool">Бассейн</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="parking" id="inf-parking" value="parking">
-                  <label for="inf-parking">Парковка</label>
+                <li><span class="check-box"></span>
+                  <input class="check-input" type="checkbox" name="parking" id="inf-parking" value="parking">
+                  <label class="check" for="inf-parking">Парковка</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="wi-fi" id="inf-wi-fi" value="wi-fi">
-                  <label for="inf-wi-fi">Wi-fi</label>
+                <li><span class="check-box"></span>
+                  <input class="check-input" type="checkbox" name="wi-fi" id="inf-wi-fi" value="wi-fi">
+                  <label class="check" for="inf-wi-fi">Wi-fi</label>
                 </li>
               </ul>
             </fieldset>
@@ -93,8 +93,8 @@
         </div>
       </div>
       <div class="sort">
-        <p class="sor"> Cортировка:</p>
-        <ul class="without-bullets sort">
+        <p> Cортировка:</p>
+        <ul class="without-bullets ul-sort">
           <li>
             <a class="link" href="">По цене</a>
           </li>
@@ -110,65 +110,79 @@
       </div>
 
       <div class="resting-kind">
-        <article class="rest">
+        <article class="resting-place">
           <div class="art-section">
             <div class="images">
               <img src="img/amara.jpg" width="135" height="90" alt="Фото гостиницы Amara resort & spa">
             </div>
             <div>
-              <h2>
+              <h2 class="article-heading">
                 <a class="link" href="">Amara resort & spa</a>
               </h2>
-              <p class="regular">
-                <span>Гостиница</span> От 4000 ₽.
-              </p>
-              <a class="link detail" href="">Подробнее</a>
-              <a class="link order" href="">Забронировать</a>
+              <div class="button-conteiner">
+                <div class="button-item">
+                  <p class="regular">Гостиница</p>
+                  <a class="link detail" href="">Подробнее</a>
+                </div>
+                <div class="button-item">
+                  <p class="regular">От 4000 ₽.</p>
+                  <a class="link order" href="">Забронировать</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="raiting">
-            <p class="stars four">Четыре звезды</p>
+            <p class="star three">Четыре звезды</p>
             <p class="regular">Рейтинг:8,5</p>
           </div>
         </article>
 
-        <article class="rest">
+        <article class="resting-place">
           <div class="art-section">
             <div class="images">
               <img src="img/desert.jpg" width="135" height="90" alt="Фото мотеля Desert quail inn">
             </div>
             <div>
-              <h2>
+              <h2 class="article-heading">
                 <a class="link" href="">Desert quail inn</a>
               </h2>
-              <p class="regular">
-                <span>Мотель</span> От 3000 ₽.
-              </p>
-              <a class="link detail" href="">Подробнее</a>
-              <a class="link order" href="">Забронировать</a>
+              <div class="button-conteiner">
+                <div class="button-item">
+                  <p class="regular">Мотель</p>
+                  <a class="link detail" href="">Подробнее</a>
+                </div>
+                <div class="button-item">
+                  <p class="regular">От 3000 ₽.</p>
+                  <a class="link order" href="">Забронировать</a>
+                </div>
+              </div>
             </div>
           </div>
-
           <div class="raiting">
             <p class="star three">Три звезды</p>
             <p class="regular">Рейтинг:8,9</p>
           </div>
         </article>
 
-        <article class="rest">
+        <article class="resting-place">
           <div class="art-section">
             <div class="images">
               <img src="img/villas.jpg" width="135" height="90" alt="Фото апартаментов Villas at poco diablo">
             </div>
             <div>
-              <h2>
+              <h2 class="article-heading">
                 <a class="link" href="">Villas at poco diablo</a>
               </h2>
-              <p class="regular">
-                <span>Апартаменты</span> ОТ 2000 ₽.
-              </p>
-              <a class="link detail" href="">Подробнее</a>
-              <a class="link order" href="">Забронировать</a>
+              <div class="button-conteiner">
+                <div class="button-item">
+                  <p class="regular">Апартаменты</p>
+                  <a class="link detail" href="">Подробнее</a>
+                </div>
+                <div class="button-item">
+                  <p class="regular">ОТ 2000 ₽.</p>
+                  <a class="link order" href="">Забронировать</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="raiting">
