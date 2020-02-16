@@ -29,11 +29,6 @@ body {
   padding: 0;
 }
 
-.link-right {/*ничего лучше не придумывается*/
-  text-align: right;
-
-}
-
 .nav-item {
   width: 300px;
 
@@ -45,6 +40,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   display: block;
+  z-index: 1;/*так как закрывает background-main.jpg*/
 }
 
 .link {
@@ -60,20 +56,23 @@ body {
 }
 
 .intro {
+  position: relative;
   background-image: url("../img/background-main.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 1200px 446px;
   background-position: center 25%;
   padding-top: 60px;
-  padding-bottom: 31px;
+  padding-bottom: 30px;
 }
 
 .intro::after {
   display: block;
-  position: absolute;
-  bottom: 48%;
+  position: absolute;/*Да полоса остается костылями убрал, я не могу понять что не так*/
+  left: 0;
+  bottom: 0;
   content: "";
   background-image: url("../img/intro-mask.svg");
+  background-position: bottom;
   height: 60px;
   width: 1200px;
 }
@@ -125,7 +124,7 @@ body {
   width: 290px;
 }
 
-.home::before,.food::before,.souvenir::before {
+.sub-reasons::before{
   content: "";
   display: block;
   background-repeat: no-repeat;
@@ -451,6 +450,7 @@ body {
 .filter-input {
   border: none;
   text-align: left;
+  font-weight: 700;
 }
 
 .user-filter {
@@ -471,25 +471,34 @@ body {
   justify-content: space-between;
 }
 
-.check-input {
+/*.check-input {
   position: absolute;
   -webkit-appearance: none;
   appearance: none;
 }
-.check::before {
+.check-input::before {
   display: block;
-  position: absolute;
-  width: 70px;
+  content: "";
+  width: 17px;
+  height: 17px;
   background-image: url("../img/checkbox-off.svg");
-  background-size: 23px;
+  background-repeat: no-repeat;
+  background-size: 17px;
 }
 
 .check {
-  padding-left: 30px;
+  padding-left: 20px;
   display: block;
   margin-bottom: 5px;
 }
-
-.check-input:checked + .check-box {/*не переключается*/
+*/
+/*.check-input::before:checked + .check-box {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
   background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-size: 17px;
 }
+не переключается*/
