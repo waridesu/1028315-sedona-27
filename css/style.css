@@ -33,15 +33,15 @@ body {
   width: 300px;
 
 }
-
-.main-header-logo {
+.logo{
   position: absolute;
   top: 0px;
   left: 50%;
   transform: translateX(-50%);
   display: block;
-  z-index: 1;/*так как закрывает background-main.jpg*/
+  z-index: 1;
 }
+
 
 .link {
   color: #000000;
@@ -59,7 +59,7 @@ body {
   position: relative;
   background-image: url("../img/background-main.jpg");
   background-repeat: no-repeat;
-  background-size: 1200px 446px;
+  background-size: 100%;
   background-position: center 25%;
   padding-top: 60px;
   padding-bottom: 30px;
@@ -72,8 +72,7 @@ body {
   bottom: 0;
   content: "";
   background-image: url("../img/intro-mask.svg");
-  background-position: bottom;
-  height: 60px;
+  height: 57px;
   width: 1200px;
 }
 
