@@ -14,8 +14,7 @@
     <header class="main-header">
       <nav class="navigation-container">
         <a class="logo" href="index.html">
-          <img class="logo-image" src="img/logo-sedona.svg" width="100" height="50"
-            alt="город Седонна логотип">
+          <img class="logo-image" src="img/logo-sedona.svg" width="100" height="50" alt="город Седонна логотип">
         </a>
         <ul class="without-bullets site-navigation">
           <li class="nav-item">
@@ -39,42 +38,44 @@
         <div class="filter">
           <h2 class="visually-hidden">Фильтр жилья</h2>
           <form class="user user-filter" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="filter-input">
-              <legend>Инфраструктура:</legend>
-              <ul class="without-bullets">
-                <li>
-                  <input class="check-input" type="checkbox" name="pool" id="inf-pool" value="pool" checked>
-                  <label class="check" for="inf-pool">Бассейн</label>
-                </li>
-                <li>
-                  <input class="check-input" type="checkbox" name="parking" id="inf-parking" value="parking">
-                  <label class="check" for="inf-parking">Парковка</label>
-                </li>
-                <li>
-                  <input class="check-input" type="checkbox" name="wi-fi" id="inf-wi-fi" value="wi-fi">
-                  <label class="check" for="inf-wi-fi">Wi-fi</label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="check-container">
+              <fieldset class="filter-input">
+                <legend>Инфраструктура:</legend>
+                <ul class="without-bullets">
+                  <li>
+                    <input class="check-input" type="checkbox" name="pool" id="inf-pool" value="pool" checked>
+                    <label class="check" for="inf-pool">Бассейн</label>
+                  </li>
+                  <li>
+                    <input class="check-input" type="checkbox" name="parking" id="inf-parking" value="parking">
+                    <label class="check" for="inf-parking">Парковка</label>
+                  </li>
+                  <li>
+                    <input class="check-input" type="checkbox" name="wi-fi" id="inf-wi-fi" value="wi-fi">
+                    <label class="check" for="inf-wi-fi">Wi-fi</label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="filter-input">
-              <legend>Тип жилья:</legend>
-              <ul class="without-bullets">
-                <li>
-                  <input type="checkbox" name="hotel" id="type-hotel" value="hotel" checked>
-                  <label for="type-hotel">Гостиница</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="motel" id="type-motel" value="motel" checked>
-                  <label for="type-motel">Мотель</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="apartments" id="type-apartments" value="apartments" checked>
-                  <label for="type-apartments">Апартаменты</label>
-                </li>
-              </ul>
-            </fieldset>
-
+              <fieldset class="filter-input">
+                <legend>Тип жилья:</legend>
+                <ul class="without-bullets">
+                  <li>
+                    <input class="check-input" type="checkbox" name="hotel" id="type-hotel" value="hotel" checked>
+                    <label class="check" for="type-hotel">Гостиница</label>
+                  </li>
+                  <li>
+                    <input class="check-input" type="checkbox" name="motel" id="type-motel" value="motel" checked>
+                    <label class="check" for="type-motel">Мотель</label>
+                  </li>
+                  <li>
+                    <input class="check-input" type="checkbox" name="apartments" id="type-apartments" value="apartments"
+                      checked>
+                    <label class="check" for="type-apartments">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
             <div class="filter-range">
               <div class="filter-range-title">Стоимость в сутки (р):</div>
               <div class="price-controls">
@@ -90,7 +91,7 @@
                   <div class="bar"></div>
                 </div>
                 <button type="button" class="range-toggle range-toggle-min">
-                <button type="button" class="range-toggle range-toggle-max">
+                  <button type="button" class="range-toggle range-toggle-max">
               </div>
               <button class="btn-transparent" type="submit">Показать</button>
             </div>
@@ -98,6 +99,7 @@
         </div>
       </div>
       <div class="sort">
+        <h3>Найдено:</h3>
         <p> Cортировка:</p>
         <ul class="without-bullets typical-sorting">
           <li>
@@ -110,8 +112,8 @@
             <a class="link" href="">По рейтингу</a>
           </li>
         </ul>
-        <a class="link up-button" href="" aria-label="вверх по списку"></a>
-        <a class="link down-button" href="" aria-label="вниз по списку"></a>
+        <a class=" sort-button up-button" href="" aria-label="вверх по списку"></a>
+        <a class=" sort-button down-button" href="" aria-label="вниз по списку"></a>
       </div>
       <div class="resting-kind">
         <article class="resting-place">
@@ -136,7 +138,7 @@
             </div>
           </div>
           <div class="raiting">
-            <p class="star three">Четыре звезды</p>
+            <p class="star four"></p>
             <p>Рейтинг:8,5</p>
           </div>
         </article>
@@ -163,7 +165,7 @@
             </div>
           </div>
           <div class="raiting">
-            <p class="star three">Три звезды</p>
+            <p class="star three"></p>
             <p>Рейтинг:8,9</p>
           </div>
         </article>
@@ -190,7 +192,7 @@
             </div>
           </div>
           <div class="raiting">
-            <p class="stars two"> Две звезды</p>
+            <p class="star two"></p>
             <p>Рейтинг:9,5</p>
           </div>
         </article>
