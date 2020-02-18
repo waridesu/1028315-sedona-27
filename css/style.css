@@ -512,12 +512,9 @@ body {
   display: block;
   width: 11px;
   height: 10px;
-
-  
 }
 .up-button{
   background-image: url("../img/icon-up-dir.svg");
-  fill: #81b3d2;
 }
 .down-button {
   background-image: url("../img/icon-down-dir.svg");
