@@ -285,16 +285,11 @@ body {
   padding: 20px  40px;
 }
 
-.resting-kind {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .resting-place {
   height: 95px;
   display: flex;
   justify-content: space-between;
-  border-top:1px solid #cacaca;
+  border-top: 1px solid #cacaca;
   padding: 20px 50px;
 }
 
@@ -556,30 +551,29 @@ body {
   background-image: url("../img/icon-down-dir.svg");
 }
 
-.stars::before {
+.stars {
   display: block;
-  content: "";
   width: 18px;
   height: 17px;
   background-image: url("../img/star.svg");
   margin-left: auto;
   background-repeat: repeat-x;
 }
-.five-stars::before {
+.five-stars {
   width: 90px;
 }
 
-.four-stars::before {
+.four-stars {
   width: 72px;
 }
 
-.three-stars::before {
+.three-stars {
   width: 54px;
 }
 
-.two-stars::before {
+.two-stars {
   width: 36px;
 }
-.one-star::before {
+.one-star {
   width: 18px;
 }
