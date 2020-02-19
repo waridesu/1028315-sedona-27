@@ -286,18 +286,16 @@ body {
 }
 
 .resting-kind {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .resting-place {
-  height: 120px;
+  height: 95px;
   display: flex;
   justify-content: space-between;
   border-top:1px solid #cacaca;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 20px 50px;
 }
 
 .resting-place:last-child {
@@ -459,14 +457,13 @@ body {
 
 }
 
-.filter-input legend{
+.checkbox-title {
   font-weight: 700;
 }
 
 .typical-sorting {
   display: flex;
-  margin-top: auto;
-  margin-bottom: auto;
+  padding: 24px 0;
 }
 
 .sort-find {
@@ -476,8 +473,7 @@ body {
 }
 
 .sort-transfer {
-  margin-top: auto;
-  margin-bottom: auto;
+  padding: 10px 0;
   margin-right: 40px;
 }
 
@@ -489,15 +485,12 @@ body {
 
 .sort {
   display: flex;
-  margin-left: 50px;
-  margin-right: 50px;
+  padding: 0 50px;
 }
 
 .sort-button-container {
   display: flex;
-  height: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  padding: 30px 0;
   margin-left: auto;
 }
 
@@ -505,6 +498,7 @@ body {
   display: block;
   width: 11px;
   height: 10px;
+  margin-left: 5px;/*Тут вроде мардж т.к. падинг начинает повторять изображение*/
 }
 
 .button-container {
@@ -517,6 +511,9 @@ body {
   position: absolute;
   -webkit-appearance: none;
   appearance: none;
+}
+.check-input::-ms-expand {
+  display: none;
 }
 
 .check-input::before {
@@ -536,12 +533,9 @@ body {
 }
 
 .check-input:checked::before {
-  display: block;
   content: "";
-  width: 27px;
-  height: 23px;
   background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
+
 }
 
 .check-box {
@@ -562,25 +556,30 @@ body {
   background-image: url("../img/icon-down-dir.svg");
 }
 
-.star{
+.stars::before {
   display: block;
+  content: "";
   width: 18px;
   height: 17px;
   background-image: url("../img/star.svg");
   margin-left: auto;
+  background-repeat: repeat-x;
+}
+.five-stars::before {
+  width: 90px;
 }
 
-.four {
-  background-repeat: repeat-x;
+.four-stars::before {
   width: 72px;
 }
 
-.three {
-  background-repeat: repeat-x;
+.three-stars::before {
   width: 54px;
 }
 
-.two {
-  background-repeat: repeat-x;
+.two-stars::before {
   width: 36px;
+}
+.one-star::before {
+  width: 18px;
 }
