@@ -14,7 +14,7 @@
     <header class="main-header">
       <nav class="navigation-container">
         <a class="logo" href="index.html">
-          <img class="logo-image" src="img/logo-sedona.svg" width="100" height="50" alt="город Седона логотип">
+          <img class="logo-image" src="img/logo-sedona.svg" width="140" height="70" alt="город Седона логотип">
         </a>
         <ul class="without-bullets site-navigation">
           <li class="nav-item">
@@ -39,7 +39,7 @@
 
       <div class="heading">
         <h1 class="main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="heading-reason">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
 
       <section class="content">
@@ -50,7 +50,7 @@
               <div class="marked">
                 <h3 class="reason-title">Настоящий городок</h3>
                 <p>-№1-</p>
-                <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+                <p class="small-scale">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="img-reason" src="img/real-city.jpg" width="800" height="400" alt="Фото города Седона">
             </div>
@@ -78,7 +78,7 @@
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
             </div>
-            <ul class="without-bullets reason">
+            <ul class="without-bullets numer-reason">
               <li class="other-reasons">
                 <h3 class="reason-title">Небольшая площадь</h3>
                 <p>-№3-</p>
@@ -98,8 +98,8 @@
         </ul>
       </section>
 
-      <div>
-        <p><b>Заинтересовались?</b></p>
+      <div class="before-search">
+        <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
       </div>
@@ -108,17 +108,17 @@
         <button class="search" type="button">Поиск гостиницы в Седоне</button>
         <form class="user search-form" method="get" action="https://echo.htmlacademy.ru">
           <p class="search-date">
-            <label for="date-in">Дата заезда
+            <label for="date-in">Дата заезда:
               <input type="text" id="date-in" name="in" placeholder="2017-04-22">
             </label>
-            <button type="button" aria-label="Календарь для даты заезда"><img src="img/calendar.svg"
+            <button class="date-button" type="button" aria-label="Календарь для даты заезда"><img src="img/calendar.svg"
                 alt="календарь для бронирования заезда"></button>
           </p>
           <p class="search-date">
-            <label for="date-out">Дата выезда
+            <label for="date-out">Дата выезда:
               <input type="text" id="date-out" placeholder="2017-07-04">
             </label>
-            <button type="button" aria-label="Календарь для даты выезда"><img src="img/calendar.svg"
+            <button class="date-button" type="button" aria-label="Календарь для даты выезда"><img src="img/calendar.svg"
                 alt="календарь для бронирования выезда"></button>
           </p>
           <p class="search-sum">
@@ -161,7 +161,6 @@
         </ul>
         <div class="academy">
           <p class="foot-text">website by</p>
-          <!--В лево никак не ставится-->
           <a class="link academy-link" href="https://htmlacademy.ru/intensive/htmlcss"
             aria-label="Ссылка на академию"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 108.08 36.85">
