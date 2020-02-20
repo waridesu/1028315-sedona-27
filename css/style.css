@@ -32,7 +32,7 @@ body {
 
 .site-navigation {
   display: flex;
-  height: 55px;
+  
   align-items: center;
   padding: 0;
   
@@ -40,20 +40,22 @@ body {
 
 .nav-item {
   text-align: right;
+  width: 100px;
+  margin: 18px 0;
 }
 
 .nav-item:first-child {
-  margin-left: 6%;
+  margin-left: 71px;
   text-align: left;
 }
  
 .nav-item:nth-child(2) {
-  margin-left: 12.4%;
+  margin-left: 142px;
   text-align: left;
 }
 .nav-item:nth-child(3) {
-  margin-left: 32.3%;
-  margin-right: 13.7%;
+  margin-left: 372px;
+  margin-right: 144px;
 }
 
 
@@ -76,7 +78,7 @@ body {
   background-size: 100%;
   background-position: center 27.5%;
   padding-top: 78px;
-  padding-bottom: 72px;
+  padding-bottom: 70px;
 }
 
 .intro::after {
@@ -96,7 +98,7 @@ body {
   font-size: 14px;
   max-width: 500px;
   font-weight: 400;
-  padding: 4% 0 1.7%;
+  padding: 48px 0 20px;
   line-height: 24px;
 }
 
@@ -121,7 +123,7 @@ body {
   justify-content: space-around;
 }
 
-.numer-reason {
+.number-reason {
   display: flex;
   justify-content: space-around;
   background-color: #d3d3d3;
@@ -156,7 +158,7 @@ body {
 
 .nested-list {
   padding-top: 40px;
-  padding-bottom: 70px;
+  padding-bottom: 72px;
   width: 290px;
 }
 
@@ -182,8 +184,8 @@ body {
 }
 
 .other-reasons {
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 28px;
+  padding-bottom: 52px;
   width: 255px;
 }
 
@@ -205,7 +207,7 @@ body {
   width: 568px;
   background-color: #766357;
   color: #ffffff;
-  padding: 32px 70px;
+  padding: 31px 70px;
   font-weight: 700;
   font-size: 21px;
   text-transform: uppercase;
@@ -276,14 +278,14 @@ body {
   font-size: 21px;
   text-align: left;
   padding-top: 10px;
-  margin-left: 10.3%;
+  margin-left: 125px;
 }
 
 .social-link {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 15.1%;
-  margin-right: 19.1%;
+  margin-left: 180px;
+  margin-right: 230px;
   margin-top: 32px;
 }
 
@@ -291,8 +293,6 @@ body {
   display: block;
   height: 46px;
   width: 46px;
-  justify-content: center;
-  align-items: center;
   background-color: #81b3d2;
   background-repeat: no-repeat;
   background-position: center;
@@ -318,15 +318,15 @@ body {
   margin: 0;
 }
 
-.foot-text{
+.footer-text{
   padding-top: 16px;
 }
 
 .academy-link {
   display: block;
-  margin-left: 6px;
-  width: 115px;
+  width: 110px;
   padding-top: 25px;
+  padding-left: 7px;
 }
 
 .detail {
@@ -357,7 +357,6 @@ body {
 }
 
 .resting-place {
-  height: 95px;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #cacaca;
