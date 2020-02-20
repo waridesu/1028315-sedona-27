@@ -99,9 +99,11 @@ body {
   padding: 4% 0 1.7%;
   line-height: 24px;
 }
+
 .heading-reason{
   padding: 17px 0;
 }
+
 .main-title {
   font-size: 21px;
 }
@@ -119,12 +121,13 @@ body {
   justify-content: space-around;
 }
 
-.numer-reason{
+.numer-reason {
   display: flex;
   justify-content: space-around;
   background-color: #d3d3d3;
 
 }
+
 .reason-title {
   font-size: 21px;
   padding: 0 70px;
@@ -140,7 +143,7 @@ body {
 
 }
 
-.small-scale{
+.small-scale {
   margin: 0;
   padding: 10px;
 }
@@ -183,11 +186,13 @@ body {
   padding-bottom: 50px;
   width: 255px;
 }
-.before-search{
+
+.before-search {
   font-size: 30px;
   font-weight: 700;
   padding: 30px 0 42px;
 }
+
 .before-search p:last-child{
   font-size: 14px;
   font-weight: 400;
@@ -224,7 +229,7 @@ body {
   padding: 37px 40px;
 }
 
-.date-button{
+.date-button {
   margin-left: auto;
   margin-right: 20px;
 }
@@ -312,9 +317,11 @@ body {
   align-items: center;
   margin: 0;
 }
+
 .foot-text{
   padding-top: 16px;
 }
+
 .academy-link {
   display: block;
   margin-left: 6px;
@@ -354,7 +361,7 @@ body {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #cacaca;
-  padding: 28px 72px;
+  padding: 27px 72px 28px;
 }
 
 .resting-place:last-child {
@@ -571,15 +578,17 @@ body {
 
 .button-container {
   display: flex;
-  width: 259px;
-  justify-content: space-between;
-}
 
+}
+.button-item{
+  margin-right: 5px;
+}
 .check-input {
   position: absolute;
   -webkit-appearance: none;
   appearance: none;
 }
+
 .check-input::-ms-expand {
   display: none;
 }
@@ -632,6 +641,7 @@ body {
   margin-left: auto;
   background-repeat: repeat-x;
 }
+
 .five-stars {
   width: 90px;
 }
