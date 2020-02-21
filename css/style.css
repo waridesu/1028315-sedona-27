@@ -54,23 +54,26 @@ body {
   margin-left: 132px;
   text-align: left;
 }
+
 .nav-item:nth-child(3) {
   margin-left: 350px;
   margin-right: 134px;
 }
 
-.nav-item .link:hover{
+.nav-item .link:hover {
   color: #81b3d2;
 }
 
-.nav-item .link:active{
+.nav-item .link:active {
   opacity: 0.5;
   color: #000000;
 }
-.nav-item .link:active+:visited{
+
+.nav-item .link:active+:visited {
   opacity: 0.7;
   color: #000000;
 }
+
 .link {
   color: #000000;
   text-decoration: none;
@@ -114,7 +117,7 @@ body {
   line-height: 24px;
 }
 
-.heading-reason{
+.heading-reason {
   padding: 17px 0;
 }
 
@@ -205,7 +208,7 @@ body {
   padding: 30px 0 42px;
 }
 
-.before-search p:last-child{
+.before-search p:last-child {
   font-size: 14px;
   font-weight: 400;
   margin: 0;
@@ -224,12 +227,13 @@ body {
   opacity: 0.5;
 }
 
-.search:hover{
+.search:hover {
   opacity: 1;
 }
-.search:active{
+.search:active {
   opacity: 0.7;
 }
+
 .pop-up-form {
   position: relative;
   font-weight: 700;
@@ -272,10 +276,11 @@ body {
   margin-bottom: 20px;
   opacity: 0.8;
 }
-.find-button:hover{
+.find-button:hover {
   opacity: 1;
 }
-.find-button:active{
+
+.find-button:active {
   opacity: 0.5;
 }
 
@@ -411,11 +416,11 @@ body {
   margin: 0;
 }
 
-.article-heading .link:hover{
+.article-heading .link:hover {
   color: #81b3d2;
 }
 
-.article-heading .link:active{
+.article-heading .link:active {
   color: #000000;
   opacity: 0.5;
 }
@@ -597,18 +602,20 @@ body {
   margin-right: 33px;
 }
 
-.typical-sorting .link:hover{
+.typical-sorting .link:hover {
   color: #81b3d2;
 }
 
-.typical-sorting .link:active{
+.typical-sorting .link:active {
   color: #000000;
   text-decoration: none;
 }
-.typical-sorting:active+:visited{
+
+.typical-sorting:active+:visited {
   color: #81b3d2;
   text-decoration: none;
 }
+
 .sort {
   display: flex;
   padding: 0 70px;
@@ -631,9 +638,10 @@ body {
   display: flex;
 
 }
-.button-item{
+.button-item {
   margin-right: 5px;
 }
+
 .check-input {
   position: absolute;
   -webkit-appearance: none;
@@ -663,9 +671,9 @@ body {
 .check-input:checked::before {
   content: "";
   background-image: url("../img/checkbox-on.svg");
-
 }
-.check-input:disabled::before{
+
+.check-input:disabled::before {
   content: "";
   opacity: 0.5;
 }
@@ -712,27 +720,32 @@ body {
 .two-stars {
   width: 36px;
 }
+
 .one-star {
   width: 18px;
 }
+
 .date-container{
   display: flex;
   padding-left: 40px;
-
 }
+
 .pop-up-input {
   border: 0px;
 }
-.sum-button,.date-button{
+
+.sum-button,.date-button {
   background-color: transparent;
   border: none;
 }
-.search-date{
+
+.search-date {
   display: flex;
   height: 21px;
   width: 490px;
   padding: 25px 0 21px 19px;
 }
-.sum-container{
+
+.sum-container {
   padding-left: 77px;
 }
