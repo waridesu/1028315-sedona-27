@@ -15,6 +15,7 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: -5px 0 #dedede, 5px 0 #dedede;
 }
 
 .navigation-container {
@@ -32,15 +33,15 @@ body {
 
 .site-navigation {
   display: flex;
-  
+
   align-items: center;
   padding: 0;
-  
+
 }
 
 .nav-item {
   text-align: right;
-  width: 100px;
+  width: 110px;
   margin: 18px 0;
 }
 
@@ -48,17 +49,28 @@ body {
   margin-left: 71px;
   text-align: left;
 }
- 
+
 .nav-item:nth-child(2) {
-  margin-left: 142px;
+  margin-left: 132px;
   text-align: left;
 }
 .nav-item:nth-child(3) {
-  margin-left: 372px;
-  margin-right: 144px;
+  margin-left: 350px;
+  margin-right: 134px;
 }
 
+.nav-item .link:hover{
+  color: #81b3d2;
+}
 
+.nav-item .link:active{
+  opacity: 0.5;
+  color: #000000;
+}
+.nav-item .link:active+:visited{
+  opacity: 0.7;
+  color: #000000;
+}
 .link {
   color: #000000;
   text-decoration: none;
@@ -126,8 +138,6 @@ body {
 .number-reason {
   display: flex;
   justify-content: space-around;
-  background-color: #d3d3d3;
-
 }
 
 .reason-title {
@@ -205,14 +215,21 @@ body {
 .search {
   border: none;
   width: 568px;
-  background-color: #766357;
+  background-color: #503e33;
   color: #ffffff;
   padding: 31px 70px;
   font-weight: 700;
   font-size: 21px;
   text-transform: uppercase;
+  opacity: 0.5;
 }
 
+.search:hover{
+  opacity: 1;
+}
+.search:active{
+  opacity: 0.7;
+}
 .pop-up-form {
   position: relative;
   font-weight: 700;
@@ -220,34 +237,26 @@ body {
 
 .search-form {
   position: absolute;
+  display: none;
   top: 88px;
   left: 50%;
   transform: translateX(-50%);
   width: 490px;
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: space-between;
   background-color: #ffffff;
   padding: 37px 40px;
 }
 
 .date-button {
-  margin-left: auto;
-  margin-right: 20px;
-}
-
-.search-date {
-  display: flex;
-  width: 480px;
-  padding-left: 18px;
-  padding-top: 10px;
+  padding-left: 148px;
 }
 
 .search-sum {
-  width: 180px;
-  padding-top: 8px;
-  margin-bottom: 62px;
-  margin-right: 65px;
+  display: flex;
+  padding: 26px 18px;
+  margin-bottom: 38px;
 }
 
 .find-button {
@@ -257,10 +266,17 @@ body {
   font-size: 21px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #81b3d2;
+  background-color: #5496bd;
   padding: 17px 50px;
   margin: 0 auto;
   margin-bottom: 20px;
+  opacity: 0.8;
+}
+.find-button:hover{
+  opacity: 1;
+}
+.find-button:active{
+  opacity: 0.5;
 }
 
 .map {
@@ -330,17 +346,31 @@ body {
 }
 
 .detail {
-  background-color: #81b3d2;
+  background-color: #669ec0;
   color: #ffffff;
   padding: 5px 17px;
+  opacity: 0.7;
+}
+
+.detail:hover {
+  opacity: 1;
+}
+.detail:active {
+  opacity: 0.5;
 }
 
 .order {
-  background-color: #766357;
+  background-color: #604e43;
   color: #ffffff;
   padding: 5px 17px;
+  opacity: 0.7;
 }
-
+.order:hover {
+  opacity: 1;
+}
+.order:active {
+  opacity: 0.5;
+}
 .filter {
   background-image: url("../img/background-main.jpg");
   background-size: 1200px;
@@ -379,6 +409,15 @@ body {
 .article-heading {
   text-align: left;
   margin: 0;
+}
+
+.article-heading .link:hover{
+  color: #81b3d2;
+}
+
+.article-heading .link:active{
+  color: #000000;
+  opacity: 0.5;
 }
 
 .before-button {
@@ -552,11 +591,24 @@ body {
 }
 
 .typical-sorting .link {
-  color: #81b3d2;
+  color: #cacaca;
+  text-decoration: #81b3d2 dotted underline;
   font-weight: 400;
   margin-right: 33px;
 }
 
+.typical-sorting .link:hover{
+  color: #81b3d2;
+}
+
+.typical-sorting .link:active{
+  color: #000000;
+  text-decoration: none;
+}
+.typical-sorting:active+:visited{
+  color: #81b3d2;
+  text-decoration: none;
+}
 .sort {
   display: flex;
   padding: 0 70px;
@@ -572,7 +624,7 @@ body {
   display: block;
   width: 12px;
   height: 10px;
-  margin-left: 13px;/*Тут вроде мардж т.к. падинг начинает повторять изображение*/
+  margin-left: 13px;
 }
 
 .button-container {
@@ -592,6 +644,12 @@ body {
   display: none;
 }
 
+.check {
+  padding-left: 39px;
+  display: block;
+  margin-bottom: 25px;
+}
+
 .check-input::before {
   display: block;
   content: "";
@@ -602,16 +660,14 @@ body {
 
 }
 
-.check {
-  padding-left: 39px;
-  display: block;
-  margin-bottom: 25px;
-}
-
 .check-input:checked::before {
   content: "";
   background-image: url("../img/checkbox-on.svg");
 
+}
+.check-input:disabled::before{
+  content: "";
+  opacity: 0.5;
 }
 
 .check-box {
@@ -658,4 +714,25 @@ body {
 }
 .one-star {
   width: 18px;
+}
+.date-container{
+  display: flex;
+  padding-left: 40px;
+
+}
+.pop-up-input {
+  border: 0px;
+}
+.sum-button,.date-button{
+  background-color: transparent;
+  border: none;
+}
+.search-date{
+  display: flex;
+  height: 21px;
+  width: 490px;
+  padding: 25px 0 21px 19px;
+}
+.sum-container{
+  padding-left: 77px;
 }
