@@ -98,7 +98,7 @@ body {
 
 .intro::after {
   display: block;
-  position: absolute;/*Да полоса остается костылями убрал, я не могу понять что не так*/
+  position: absolute;
   left: 0;
   bottom: 0;
   content: "";
@@ -215,6 +215,13 @@ body {
   padding: 6px 0;
 }
 
+
+
+.pop-up-form {
+  position: relative;
+  font-weight: 700;
+}
+
 .search {
   border: none;
   width: 568px;
@@ -230,39 +237,101 @@ body {
 .search:hover {
   opacity: 1;
 }
+
 .search:active {
   opacity: 0.7;
 }
 
-.pop-up-form {
-  position: relative;
-  font-weight: 700;
-}
-
 .search-form {
   position: absolute;
-  display: none;
-  top: 88px;
+  top: 86px;
   left: 50%;
   transform: translateX(-50%);
-  width: 490px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  width: 455px;
   background-color: #ffffff;
-  padding: 37px 40px;
+  padding: 37px 57px;
+}
+
+.search-date {
+  display: flex;
+  height: 21px;
+  width: 100%;
+  margin: 19px 0 46px;
+
+}
+.search-sum-container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.search-sum{
+  position: relative;
+  display: flex;
+  height: 21px;
+  margin: 0 0 67px -2px;
+}
+
+.search-sum .pop-up-input{
+  width: 85px;
+  margin-left: 40px;
+  text-align: center;
+  height: 0;
+}
+.sum-correct .pop-up-input{
+margin-left: 28px;
+}
+
+
+.date-container {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+  margin-left: 26px;
+}
+
+.date-correct{
+  margin-left: 30px;
+}
+
+.search-form label{
+  padding-top: 9px;
 }
 
 .date-button {
-  padding-left: 148px;
+  position: absolute;
+  top: 3px;
+  right: 0;
 }
 
-.search-sum {
-  display: flex;
-  padding: 26px 18px;
-  margin-bottom: 38px;
+.pop-up-input {
+  width: 100%;
+  background: #f2f2f2;
+  border: 0px;
+  padding: 19px 15px;
+  font-weight: 700;
 }
 
+.sum-button,.date-button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+}
+.sum-button{
+  top: 50%;
+}
+.button-minus{
+  left: 125px;
+}
+.button-plus{
+  left: 195px;
+}
+.sum-correct .button-minus{
+  left: 80px;
+}
+.sum-correct .button-plus{
+  left: 150px;
+}
 .find-button {
   border: none;
   width: 458px;
@@ -572,7 +641,6 @@ body {
 .checkbox-title {
   font-weight: 700;
   padding-bottom: 19px;
-
 }
 
 .typical-sorting {
@@ -644,8 +712,10 @@ body {
 
 .check-input {
   position: absolute;
-  -webkit-appearance: none;
-  appearance: none;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 .check-input::-ms-expand {
@@ -653,49 +723,35 @@ body {
 }
 
 .check {
+  position: relative;
   padding-left: 39px;
   display: block;
   margin-bottom: 25px;
 }
-
-.check-input::before {
-  display: block;
-  content: "";
-  width: 27px;
-  height: 23px;
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
+.filter-input svg{/*не понимаю почему по классу не выставлялось позиционирование .check-button*/
+  position: absolute;
+}
+.check-button{
+ fill: #ffffff;
 
 }
-
-.check-input:checked::before {
-  content: "";
-  background-image: url("../img/checkbox-on.svg");
+.check-input + .check-on{
+  display: none;
 }
-
-.check-input:disabled::before {
-  content: "";
-  opacity: 0.5;
-}
-
-.check-box {
+.check-input:checked + .check-on{/*тоже самое почему не переключается помоги пожалуйста если можно*/
   display: block;
 }
-
 .check-container {
   width: 30%;
   display: flex;
   justify-content: space-between;
 }
-
-.up-button {
-  background-image: url("../img/icon-up-dir.svg");
+.up-button{
+  fill: #ffb600;
 }
-
-.down-button {
-  background-image: url("../img/icon-down-dir.svg");
+.up-button:hover{
+  fill: black;
 }
-
 .stars {
   display: block;
   width: 18px;
@@ -725,27 +781,6 @@ body {
   width: 18px;
 }
 
-.date-container{
-  display: flex;
-  padding-left: 40px;
-}
 
-.pop-up-input {
-  border: 0px;
-}
 
-.sum-button,.date-button {
-  background-color: transparent;
-  border: none;
-}
 
-.search-date {
-  display: flex;
-  height: 21px;
-  width: 490px;
-  padding: 25px 0 21px 19px;
-}
-
-.sum-container {
-  padding-left: 77px;
-}
