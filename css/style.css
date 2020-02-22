@@ -728,18 +728,22 @@ margin-left: 28px;
   display: block;
   margin-bottom: 25px;
 }
-.filter-input svg{/*не понимаю почему по классу не выставлялось позиционирование .check-button*/
+.check-button{
   position: absolute;
 }
 .check-button{
  fill: #ffffff;
 
 }
-.check-input + .check-on{
+.check-on{
   display: none;
 }
-.check-input:checked + .check-on{/*тоже самое почему не переключается помоги пожалуйста если можно*/
+.check-input:checked~.check-on{/*понять бы почему предидущий выбать нельзя, да заново пройду курс*/
   display: block;
+}
+.check-input:disabled~.check-on,
+.check-input:disabled~.check-off{
+  fill: #6a6a6a;
 }
 .check-container {
   width: 30%;
