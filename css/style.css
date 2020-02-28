@@ -572,20 +572,31 @@ margin-left: 28px;
   background-color: #503e33;
 }
 .filter {
+  position: relative;
+}
+.filter::before{
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  background-color: #81b6d6;
   background-image: url("../img/background-main.jpg");
   background-size: 1200px;
-  background-repeat: no-repeat;
   background-position: center;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+   filter: blur(5px);
+  z-index: -1;
 }
-
 .user-filter {
   display: flex;
   justify-content: space-between;
-  padding: 26px  57px 0;
+  padding: 27px  58px 0;
   font-size: 16px;
   color: #ffffff;
 }
-
+.resting-kind{
+  height: 456px;
+}
 .resting-place {
   display: flex;
   justify-content: space-between;
@@ -627,9 +638,10 @@ margin-left: 28px;
 }
 
 .filter-range {
-  width: 330px;
+  width: 319px;
   color: #ffffff;
   text-transform: uppercase;
+  margin-right: 14px;
 }
 
 .filter-range-title {
@@ -644,7 +656,7 @@ margin-left: 28px;
   position: relative;
 
   height: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -667,22 +679,23 @@ margin-left: 28px;
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
+  line-height: 32px;
   vertical-align: top;
-
+  text-align: left;
   cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
+
+  padding-left: 55px;
+
 }
 
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
 
@@ -737,8 +750,8 @@ margin-left: 28px;
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin: 0 85px;
+  padding: 6px 34px;
 
   font-size: 14px;
   line-height: 20px;
@@ -760,13 +773,14 @@ margin-left: 28px;
 .filter-input {
   border: none;
   text-align: left;
-  margin-right: 93px;
+  margin-right: 92px;
 
 }
 
 .checkbox-title {
   font-weight: 700;
   padding-bottom: 19px;
+  color: #ffffff;
 }
 
 .typical-sorting {
@@ -779,7 +793,7 @@ margin-left: 28px;
   font-size: 21px;
   font-weight: 700;
   margin-right: 53px;
-  margin-top: 30px;
+  margin-top: 29px;
   margin-bottom: 34px;
 }
 
@@ -817,7 +831,7 @@ margin-left: 28px;
 
 .sort-button-container {
   display: flex;
-  padding-top: 37px;
+  padding-top: 31px;
   margin-left: auto;
 }
 
@@ -861,7 +875,7 @@ margin-left: 28px;
 
 .check {
   position: relative;
-  padding-left: 39px;
+  padding-left: 40px;
   display: block;
   margin-bottom: 25px;
 }
@@ -886,9 +900,8 @@ margin-left: 28px;
   fill: #6a6a6a;
 }
 .check-container {
-  width: 360px;
+  width: 380px;
   display: flex;
-  justify-content: space-between;
 }
 
 .number-raiting{
