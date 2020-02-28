@@ -715,7 +715,7 @@ body {
 .filter-input {
   border: none;
   text-align: left;
-  margin-right: 92px;
+  margin-right: 96px;
 }
 
 .checkbox-title {
@@ -820,31 +820,36 @@ body {
   position: relative;
   padding-left: 40px;
   display: block;
+}
+
+.filter li{
   margin-bottom: 25px;
 }
 
 .check-button {
   position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .check-button {
  fill: #ffffff;
 }
 
-.check-on {
+.check .check-on {
   display: none;
 }
 
-.check-input:checked~.check-on {
+.check-input:checked+.check .check-on {
   display: block;
 }
 
-.check-input:checked~.check-off {
+.check-input:checked+.check .check-off {
   display: none;
 }
 
-.check-input:disabled~.check-on,
-.check-input:disabled~.check-off {
+.check-input:disabled+.check .check-on,
+.check-input:disabled+.check .check-off {
   fill: #6a6a6a;
 }
 
