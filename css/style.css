@@ -15,7 +15,7 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 15px 0px 5px 0px rgba(0,1,1,0.2);
+  box-shadow: 0 0 5px 15px rgba(0,1,1,0.2);
   background-color: #fff;
  }
 
@@ -45,17 +45,17 @@ body {
 }
 
 .nav-item:first-child {
-  margin-left: 72px;
+  padding-left: 72px;
   text-align: left;
 }
 
 .nav-item:nth-child(2) {
-  margin-left: 132px;
+  padding-left: 132px;
   text-align: left;
 }
 
 .nav-item:nth-child(3) {
-  margin-left: 350px;
+  padding-left: 350px;
   margin-right: 134px;
 }
 
@@ -143,7 +143,7 @@ body {
 
 .reason-title {
   font-size: 21px;
-  padding: 0 70px;
+  padding: 0 70px 2px;
 }
 
 .marked {
@@ -168,7 +168,7 @@ body {
 
 .nested-list {
   padding-top: 37px;
-  padding-bottom: 71px;
+  padding-bottom: 69px;
   width: 290px;
 }
 
@@ -195,7 +195,7 @@ body {
 
 .other-reasons {
   padding-top: 26px;
-  padding-bottom: 55px;
+  padding-bottom: 47px;
   width: 255px;
 }
 
@@ -283,12 +283,12 @@ body {
 }
 
 .search-date {
-  margin: 18px 0 11px;
+  padding: 18px 0 11px;
   width: 430px;
 }
 
 .search-sum {
-  margin: 19px 0 54px;
+  padding: 19px 0 54px;
   width: 160px;
 }
 
@@ -313,7 +313,7 @@ body {
 }
 
 .number-correct {
-  margin-left: 120px;
+  padding-left: 120px;
 }
 
 .number-correct .sum-container {
@@ -397,16 +397,16 @@ body {
   font-size: 21px;
   line-height: 32px;
   text-align: left;
-  margin-left: 129px;
-  margin-top: 25px;
+  padding-left: 124px;
+  padding-top: 4px;
 }
 
 .social-link {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 169px;
-  margin-right: 227px;
-  margin-top: 33px;
+  padding-left: 174px;
+  padding-right: 227px;
+  padding-top: 33px;
 }
 
 .social-icon {
@@ -540,8 +540,8 @@ body {
 }
 
 .images {
-  margin-top: 3px;
-  margin-right: 30px;
+  padding-top: 3px;
+  padding-right: 30px;
 }
 
 .article-heading {
@@ -605,7 +605,6 @@ body {
   line-height: 32px;
   vertical-align: top;
   text-align: left;
-  cursor: pointer;
 }
 
 .price-controls .min-price,
@@ -649,7 +648,6 @@ body {
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
 }
 
 .range-toggle:hover {
@@ -675,7 +673,6 @@ body {
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
-  cursor: pointer;
 }
 
 .btn-transparent:hover {
@@ -730,7 +727,7 @@ body {
   border-bottom: none;
 }
 
-.typical-sorting:active + :visited {
+.typical-sorting .active {
   color: #81b3d2;
   text-decoration: none;
 }
@@ -749,8 +746,8 @@ body {
   display: block;
   width: 12px;
   height: 10px;
-  margin-left: 11px;
-  margin-bottom: 7px;
+  padding-left: 11px;
+  padding-bottom: 7px;
   fill: #cacaca;
 }
 
@@ -771,7 +768,7 @@ body {
 }
 
 .button-item {
-  margin-right: 6px;
+  padding-right: 6px;
 }
 
 .check-input {
@@ -844,7 +841,7 @@ body {
   margin-left: auto;
   background-repeat: repeat-x;
   margin-top: 0;
-  margin-bottom: 49px;
+  padding-bottom: 35px;
   font-size: 0;/*подпись для читалок есть, а на странице не видно*/
 }
 
@@ -866,4 +863,20 @@ body {
 
 .one-star {
   width: 18px;
+}
+
+.modal-hide {
+  display: none;
+}
+
+.other-reasons-fix {
+  width: 264px;
+}
+.marked-correct{
+  margin-bottom: 0;
+  padding-bottom: 6px;
+}
+.other-reasons-correct{
+  margin-bottom: 0;
+  padding-bottom: 6px;
 }
