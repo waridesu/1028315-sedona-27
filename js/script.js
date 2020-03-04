@@ -1,6 +1,6 @@
 var togBtn = document.querySelector(".search");
 var modal = document.querySelector(".modal-container");
 
-togBtn.onclick = function() {
-  modal.classList.toggle("modal-hide");
-}
+togBtn.addEventListener("click", function() {
+  modal.classList.add("modal-hide");
+});
