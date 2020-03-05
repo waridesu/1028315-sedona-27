@@ -21,7 +21,6 @@ body {
 
 .navigation-container {
   position: relative;
-
 }
 
 .logo {
@@ -42,7 +41,7 @@ body {
 .nav-item {
   text-align: right;
   width: 110px;
-  padding: 17px 0;
+  padding: 17px 0 18px;
 }
 
 .nav-item:first-child {
@@ -68,7 +67,7 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.nav-item .link .active {
+.nav-item .active {
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -111,7 +110,7 @@ body {
   font-size: 14px;
   width: 500px;
   font-weight: 400;
-  padding: 46px 0 24px;
+  padding: 45px 0 24px;
   line-height: 26px;
 }
 
@@ -153,7 +152,6 @@ body {
   height: 204px;
   width: 350px;
   padding: 26px 45px;
-
 }
 
 .small-scale {
@@ -186,7 +184,7 @@ body {
 }
 
 .food::before {
-  background-image: url("../img/icon-3.svg");  
+  background-image: url("../img/icon-3.svg");
 }
 
 .souvenir::before {
@@ -203,14 +201,15 @@ body {
 .before-search {
   font-size: 30px;
   font-weight: 700;
-  padding: 27px 0 43px;
+  padding: 27px 0 47px;
 }
 
 .before-search p:last-child {
   font-size: 14px;
   font-weight: 400;
+  line-height: 24px;
   margin: 0;
-  padding: 6px 0;
+  padding-top: 2px;
 }
 
 .pop-up-form {
@@ -331,7 +330,7 @@ body {
 }
 
 .button-plus {
-  top:11px;
+  top: 11px;
   right: 9px;
 }
 
@@ -394,7 +393,7 @@ body {
 }
 
 .telephone {
-  width: 220px;
+  width: 210px;
   font-weight: 700;
   font-size: 21px;
   line-height: 32px;
@@ -403,10 +402,14 @@ body {
   padding-top: 2px;
 }
 
+.telephone a {
+  white-space: nowrap;
+}
+
 .social-link {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 174px;
+  padding-left: 184px;
   padding-right: 227px;
   padding-top: 31px;
 }
@@ -452,22 +455,29 @@ body {
   background-image: url("../img/youtube.svg");
 }
 
-.academy {
-  display: flex;
-  align-items: center;
-  margin-top: 0px;
-}
-
-.footer-text {
-  padding-top: 3px;
+.academy-footer {
+  position: relative;
+  padding-top: 30px;
 }
 
 .academy-link {
-  display: block;
+  position: absolute;
+  top: 21px;
   width: 113px;
-  padding-top: 7px;
   padding-left: 10px;
   fill: #231f20;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+  .academy-link {
+    top: 1px;
+  }
+
+  .price-controls input{
+    padding-bottom: 3px;
+  }
+
 }
 
 .academy-link:hover {
@@ -517,20 +527,20 @@ body {
 .user-filter {
   display: flex;
   justify-content: space-between;
-  padding: 28px  58px 0;
+  padding: 27px 58px 0;
   font-size: 16px;
   color: #ffffff;
 }
 
 .resting-kind {
-  margin-bottom: 2px;
+  margin-bottom: 5px;
 }
 
 .resting-place {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #cacaca;
-  padding: 26px 73px 17px 72px;
+  padding: 27px 73px 16px 72px;
 }
 
 .resting-place:last-child {
@@ -690,13 +700,14 @@ body {
 
 .checkbox-title {
   font-weight: 700;
-  padding-bottom: 18px;
+  padding-bottom: 19px;
   color: #ffffff;
 }
 
 .typical-sorting {
   display: flex;
-  margin: auto 0;
+  padding-top: 34px;
+  padding-bottom: 31px;
   font-size: 12px;
 }
 
@@ -704,12 +715,13 @@ body {
   font-size: 21px;
   font-weight: 700;
   margin-right: 53px;
-  margin-top: 32px;
-  margin-bottom: 34px;
+  padding-top: 11px;
+  padding-bottom: 9px;
 }
 
 .sort-transfer {
-  margin: auto 40px auto 0;
+  padding-top: 22px;
+  padding-right: 40px;
   font-size: 12px;
 }
 
@@ -741,7 +753,8 @@ body {
 
 .sort-button-container {
   display: flex;
-  margin: auto 1px auto auto;
+  padding: 35px 1px 34px;
+  margin-left: auto;
 }
 
 .sort-button {
@@ -788,11 +801,11 @@ body {
 }
 
 .filter li {
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 .filter li:last-child {
-  margin-bottom: 22px;
+  padding-bottom: 21px;
 }
 
 .check-button {
@@ -810,7 +823,7 @@ body {
 }
 
 .check-input:focus + .check {
-  box-shadow: 0 0 0 3px #0078d4;/*чтобы было видно что на него можно прейти с клавиатуры*/
+  box-shadow: 0 0 0 3px #0078d4;
 }
 
 .check-input:checked + .check .check-on {
@@ -838,40 +851,37 @@ body {
 .stars {
   display: block;
   width: 18px;
-  height: 17px;
+  height: 25px;
   background-image: url("../img/star.svg");
   margin-left: auto;
-  background-repeat: repeat-x;
-  margin-top: 0;
-  padding-bottom: 35px;
-  font-size: 0;/*подпись для читалок есть, а на странице не видно*/
+  background-repeat: space no-repeat;
+  margin-top: 2px;
+  padding-bottom: 25px;
+  font-size: 0;
 }
 
 .five-stars {
-  width: 90px;
+  width: 110px;
 }
 
 .four-stars {
-  width: 72px;
+  width: 88px;
 }
 
 .three-stars {
-  width: 54px;
+  width: 64px;
 }
 
 .two-stars {
-  width: 36px;
+  width: 40px;
 }
 
 .one-star {
-  width: 18px;
+  width: 20px;
 }
 
-.modal-container {
+.modal-hide {
   display: none;
-}
-.modal-show {
-  display: block;
 }
 
 .other-reasons-fix {
