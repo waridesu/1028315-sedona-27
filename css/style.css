@@ -462,7 +462,7 @@ body {
 
 .academy-link {
   position: absolute;
-  top: 1px;
+  top: 1px; /*да знаю что нерекомндуется, но иначе неправильно отображается на ie11*/
   bottom: 21px;
   width: 113px;
   padding-left: 10px;
