@@ -457,7 +457,7 @@ body {
 
 .academy-footer {
   position: relative;
-  margin-top: 50px;
+  margin-top: 50px;/*да знаю что нужно падингом сделать но тогда не правиль будет отсчитывать топ на ie 11-ом*/
 }
 
 .academy-link {
