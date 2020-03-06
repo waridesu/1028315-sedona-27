@@ -457,12 +457,13 @@ body {
 
 .academy-footer {
   position: relative;
-  margin-top: 50px;/*да знаю что нужно падингом сделать но тогда не правиль будет отсчитывать топ на ie 11-ом*/
+  padding-top: 30px;
 }
 
 .academy-link {
   position: absolute;
-  top: -9px;
+  top: 1px;
+  bottom: 21px;
   width: 113px;
   padding-left: 10px;
   fill: #231f20;
