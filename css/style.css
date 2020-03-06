@@ -457,27 +457,15 @@ body {
 
 .academy-footer {
   position: relative;
-  padding-top: 30px;
+  margin-top: 50px;
 }
 
 .academy-link {
   position: absolute;
-  top: 21px;
+  top: -9px;
   width: 113px;
   padding-left: 10px;
   fill: #231f20;
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-
-  .academy-link {
-    top: 1px;
-  }
-
-  .price-controls input{
-    padding-bottom: 3px;
-  }
-
 }
 
 .academy-link:hover {
@@ -628,6 +616,7 @@ body {
 .price-controls input {
   width: 50px;
   margin: 0;
+  padding-bottom: 3px;
   color: inherit;
   font: inherit;
   background: none;
