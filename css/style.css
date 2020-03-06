@@ -455,16 +455,18 @@ body {
   background-image: url("../img/youtube.svg");
 }
 
-.academy-footer {
-  position: relative;
-  padding-top: 30px;
+.academy-wrap {
+  display: flex;
+  padding-top: 35px;
 }
-
+.academy-footer{
+  padding-top: 9px;
+}
 .academy-link {
-  position: absolute;
-  top: 1px; /*да знаю что нерекомндуется, но иначе неправильно отображается на ie11*/
-  bottom: 21px;
-  width: 113px;
+  height: 39px;
+  width: 114px;
+  padding: 0;
+  margin: 0;
   padding-left: 10px;
   fill: #231f20;
 }
