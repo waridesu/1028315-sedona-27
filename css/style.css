@@ -39,24 +39,17 @@ body {
 }
 
 .nav-item {
-  text-align: right;
-  width: 110px;
-  padding: 17px 0 18px;
-}
-
-.nav-item:first-child {
-  padding-left: 72px;
+  width: 100px;
+  padding: 17px 71px 18px ;
   text-align: left;
 }
-
-.nav-item:nth-child(2) {
-  padding-left: 132px;
-  text-align: left;
-}
-
 .nav-item:nth-child(3) {
-  padding-left: 350px;
-  margin-right: 134px;
+  margin-left: auto;
+}
+
+.nav-item:nth-child(3),
+.nav-item:nth-child(4) {
+  text-align: right;
 }
 
 .nav-item .link:hover {
@@ -89,7 +82,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center 27.5%;
-  padding-top: 77px;
+  padding-top: 76px;
   padding-bottom: 73px;
 }
 
@@ -110,7 +103,7 @@ body {
   font-size: 14px;
   width: 500px;
   font-weight: 400;
-  padding: 45px 0 24px;
+  padding: 46px 0 24px;
   line-height: 26px;
 }
 
@@ -189,7 +182,6 @@ body {
 
 .souvenir::before {
   background-image: url("../img/icon-2.svg");
-
 }
 
 .other-reasons {
@@ -385,7 +377,7 @@ body {
 
 .map {
   width: 1200px;
-  height: 472px;
+  height: 473px;
 }
 
 .footer-wrap {
@@ -398,8 +390,8 @@ body {
   font-size: 21px;
   line-height: 32px;
   text-align: left;
-  padding-left: 124px;
-  padding-top: 2px;
+  padding-left: 123px;
+  padding-top: 1px;
 }
 
 .telephone a {
@@ -409,9 +401,9 @@ body {
 .social-link {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 184px;
-  padding-right: 227px;
-  padding-top: 31px;
+  padding-left: 185px;
+  padding-right: 228px;
+  padding-top: 30px;
 }
 
 .social-icon {
@@ -457,17 +449,17 @@ body {
 
 .academy-wrap {
   display: flex;
-  padding-top: 35px;
+  padding-top: 20px;
 }
 .academy-footer{
-  padding-top: 9px;
+  padding-top: 23px;
 }
 .academy-link {
-  height: 39px;
-  width: 114px;
+  height: 67px;
+  width: 115px;
   padding: 0;
   margin: 0;
-  padding-left: 10px;
+  padding-left: 9px;
   fill: #231f20;
 }
 
