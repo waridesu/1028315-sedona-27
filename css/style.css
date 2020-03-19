@@ -219,6 +219,18 @@ body {
   font-size: 21px;
   text-transform: uppercase;
 }
+.pop-up-input::-webkit-input-placeholder { /* Edge */
+  color: #000000;
+}
+
+.pop-up-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #000000;
+}
+
+.pop-up-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #000000;
+  opacity: 1;
+}
 
 .search:hover {
   background-color: #604e43;
@@ -522,12 +534,12 @@ body {
 .resting-place {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #cacaca;
+  border-top: 1px solid #e5e5e5;
   padding: 27px 73px 16px 72px;
 }
 
 .resting-place:last-child {
-  border-bottom: 1px solid #cacaca;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .art-section {
@@ -698,7 +710,7 @@ body {
 .sort-find {
   font-size: 21px;
   font-weight: 700;
-  margin-right: 53px;
+  margin-right: 48px;
   padding-top: 11px;
   padding-bottom: 9px;
 }
@@ -828,8 +840,9 @@ body {
 }
 
 .number-raiting {
-  padding: 4px 13px 2px 16px;
+  padding: 3px 12px 3px 15px;
   background-color: #f2f2f2;
+  color: #666666;
 }
 
 .stars {
