@@ -11,11 +11,11 @@ var dateOut = document.querySelector(".date-out");
 var sumAdults = document.querySelector(".sum-adults");
 var sumChild = document.querySelector(".sum-child");
 
-from.addEventListener("submit", function() {
+form.addEventListener("submit", function(evt) {
   if (!dateIn.value || !dateOut.value || !sumAdults.value || !sumChild.value) {
     evt.preventDefault();
-    modal.classList.add("modal-error");
-    modal.offsetWidht = modal.offsetWidht;
+    modal.classList.remove("modal-error");
+    modal.offsetWidth = modal.offsetWidth;
     modal.classList.add("modal-error");
   }
   else {
