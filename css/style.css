@@ -84,6 +84,7 @@ body {
   background-position: center 27.5%;
   padding-top: 76px;
   padding-bottom: 73px;
+  background-color: #657e9d;
 }
 
 .intro::after {
@@ -123,15 +124,21 @@ body {
   margin: -1px;
 }
 
+.reason-landscape {
+  display: flex;
+}
+
 .reason {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .number-reason {
   display: flex;
   justify-content: space-around;
   background-color: #eeeeee;
+  flex-wrap: wrap;
 }
 
 .reason-title {
@@ -142,9 +149,9 @@ body {
 .marked {
   background-color: #81b3d2;
   color: #ffffff;
-  height: 204px;
   width: 350px;
-  padding: 26px 45px;
+  height: 100%;
+  padding: 26px 45px 47px;
 }
 
 .small-scale {
@@ -413,6 +420,7 @@ body {
 .social-link {
   display: flex;
   flex-wrap: wrap;
+  width: 156px;
   padding-left: 185px;
   padding-right: 228px;
   padding-top: 30px;
@@ -424,6 +432,7 @@ body {
   width: 46px;
   background-color: #81b3d2; 
   margin-left: 6px;
+  margin-bottom: 6px;
 }
 
 .social-icon::before {
@@ -517,6 +526,7 @@ body {
   background-image: url("../img/img-blur.jpg");
   background-size: 1200px;
   background-position: center;
+  background-color: #667b8b;
 }
 
 .user-filter {
@@ -806,8 +816,10 @@ body {
 
 .check-button {
   position: absolute;
-  top: -1px;
-  left: 0;
+  top: -5px;
+  left: -4px;
+  padding: 4px;
+  padding-right: 0;
 }
 
 .check-button {
@@ -818,9 +830,9 @@ body {
   display: none;
 }
 
-.check + .check-input:focus {
-  display: block;
-  box-shadow: 0 0 0 3px #0078d4;
+.check-input:focus ~ .check-button {
+  outline: 2px solid #03A9F4;
+  outline-offset: -2px;
 }
 
 .check-input:checked ~ .check-on {
@@ -894,4 +906,17 @@ body {
 .other-reasons-correct {
   margin-bottom: 0;
   padding-bottom: 7px;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
