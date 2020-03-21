@@ -3,6 +3,7 @@ var modal = document.querySelector(".modal-container");
 modal.classList.add("modal-hide");
 togBtn.addEventListener("click", function() {
   modal.classList.toggle("modal-hide");
+  modal.classList.remove("modal-error");/*нужно т.к. срабатывали две анимации*/
 });
 
 var form = modal.querySelector("form");
